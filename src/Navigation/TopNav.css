@@ -1,0 +1,42 @@
+.TopNav {
+  text-align: center;
+  flex-direction:row;
+  align-items:stretch;
+  display:table;
+  background-color:#222831 ;
+  color:honeydew ;
+  height: 15vh;
+  width: 100vw;
+}
+
+.Link {
+  color:ivory ;
+  text-decoration: 'none';
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.SelectedLink {
+  color:ivory ;
+  text-decoration: 'none';
+  font-size: 25px;
+}
+
+
+.Highlight {
+  width: auto;
+  margin-top: 0.3vh;
+  height : 0.5vh;
+  background-color:#00ADB5;
+}
+
+.NoHighlight {
+  width: auto;
+  margin-top: 0.3vh;
+  height : 0.5vh;
+}
+
+.NavAndBox {
+  display:inline-block;
+  margin-left: 2vw;
+}

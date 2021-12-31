@@ -1,0 +1,26 @@
+.Text {
+    text-align: justify;
+    color:#EEEEEE;
+}
+
+.Root{
+    flex-direction: row;
+}
+
+.Left{
+    background-color:#393E46 ;
+    color:darkslategray ;
+    float:left;
+    height: 85vh;
+    width: 53vw;
+    padding-left: 1vw;
+}
+
+.Right{
+    background-color:#393E46 ;
+    float:right;
+    height: 84vh;
+    width: 45vw;    
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
