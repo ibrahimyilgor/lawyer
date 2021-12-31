@@ -24,3 +24,30 @@
     padding-top: 1vh;
     padding-left: 1vw;
 }
+
+@media (orientation: portrait){
+    .Text {
+        text-align: justify;
+        color:#EEEEEE;
+    }
+    
+    .Root{
+        flex-direction: column;
+    }
+    
+    .Left{
+        background-color:#393E46 ;
+        color:darkslategray ;
+        height: 42.5vh;
+        width: 100vw;
+        padding-left: 1vw;
+    }
+    
+    .Right{
+        background-color:#393E46 ;
+        height: 42.5vh;
+        width: 98vw;    
+        padding-top: 1vh;
+        padding-left: 1vw;
+    }
+}
