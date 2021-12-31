@@ -1,13 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './TopNav.css';
 import logo from '../logo.png'; // with import
-import {
-    NavLink
-  } from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 
 const TopNavigation = () => {
-
+  const location = useLocation();
   const [selected,setSelected] = useState(0);
+
+  useEffect(() => {
+    console.log(location.pathname);
+
+    if(location.pathname === "/"){
+      setSelected(1);
+    }
+    else if(location.pathname === "/hakkimizda"){
+      setSelected(2);
+    }
+    else if(location.pathname === "/iletisim"){
+      setSelected(3);
+    }
+  }, [location]);
+
 
   return (
     <div  className="TopNav">
@@ -15,15 +28,15 @@ const TopNavigation = () => {
         <img alt="logo" width="100px" src={logo} />
       </div>
       <div className="NavAndBox">
-        <NavLink onClick={()=>setSelected(1)} to="/" className={selected===1 ? "SelectedLink" : "Link"} >Ana Sayfa</NavLink>
+        <NavLink to="/" className={selected===1 ? "SelectedLink" : "Link"} >Ana Sayfa</NavLink>
         <div className={selected===1 ? "Highlight" : "NoHighlight"}></div>
       </div>
       <div className="NavAndBox">
-        <NavLink onClick={()=>setSelected(2)} to="/hakkimizda" className={selected===2 ? "SelectedLink" : "Link"}>Hakkımızda</NavLink>
+        <NavLink to="/hakkimizda" className={selected===2 ? "SelectedLink" : "Link"}>Hakkımızda</NavLink>
         <div className={selected===2 ? "Highlight" : "NoHighlight"}></div>
       </div>
       <div className="NavAndBox">
-        <NavLink onClick={()=>setSelected(3)} to="/iletisim" className={selected===3 ? "SelectedLink" : "Link"}>İletişim</NavLink>
+        <NavLink to="/iletisim" className={selected===3 ? "SelectedLink" : "Link"}>İletişim</NavLink>
         <div className={selected===3 ? "Highlight" : "NoHighlight"}></div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import './Contact.css';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 const Users = ({ 
   google, 
