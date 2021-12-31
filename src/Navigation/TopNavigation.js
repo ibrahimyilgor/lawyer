@@ -23,23 +23,27 @@ const TopNavigation = () => {
 
 
   return (
-    <div  className="TopNav">
-      <div>
-        <img alt="logo" width="100px" src={logo} />
+    <div>
+      <div  className="TopNav">
+        <div>
+          <img alt="logo" width="100px" src={logo} />
+        </div>
+        <div className="NavAndBox">
+          <NavLink to="/" className={selected===1 ? "SelectedLink" : "Link"} >Ana Sayfa</NavLink>
+          <div className={selected===1 ? "Highlight" : "NoHighlight"}></div>
+        </div>
+        <div className="NavAndBox">
+          <NavLink to="/hakkimizda" className={selected===2 ? "SelectedLink" : "Link"}>Hakkımızda</NavLink>
+          <div className={selected===2 ? "Highlight" : "NoHighlight"}></div>
+        </div>
+        <div className="NavAndBox">
+          <NavLink to="/iletisim" className={selected===3 ? "SelectedLink" : "Link"}>İletişim</NavLink>
+          <div className={selected===3 ? "Highlight" : "NoHighlight"}></div>
+        </div>
       </div>
-      <div className="NavAndBox">
-        <NavLink to="/" className={selected===1 ? "SelectedLink" : "Link"} >Ana Sayfa</NavLink>
-        <div className={selected===1 ? "Highlight" : "NoHighlight"}></div>
+      <div className="Line">
       </div>
-      <div className="NavAndBox">
-        <NavLink to="/hakkimizda" className={selected===2 ? "SelectedLink" : "Link"}>Hakkımızda</NavLink>
-        <div className={selected===2 ? "Highlight" : "NoHighlight"}></div>
-      </div>
-      <div className="NavAndBox">
-        <NavLink to="/iletisim" className={selected===3 ? "SelectedLink" : "Link"}>İletişim</NavLink>
-        <div className={selected===3 ? "Highlight" : "NoHighlight"}></div>
-      </div>
-    </div>
+        </div>
   ); 
 }
 

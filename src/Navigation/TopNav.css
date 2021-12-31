@@ -5,29 +5,31 @@
   display:table;
   background-color:#222831 ;
   color:honeydew ;
-  height: 15vh;
+  height: 14.75vh;
   width: 100vw;
 }
 
 .Link {
   color:ivory ;
   text-decoration: 'none';
-  font-size: 1.25vw;
+  font-size: 2.5vmin;
   text-decoration: none;
 }
 
 .Link:hover {
   background-color:#00ADB5 ;
+  border-radius: 0.5vmin;
 }
 
 .SelectedLink {
   color:ivory ;
   text-decoration: none;
-  font-size: 1.25vw;
+  font-size: 2.5vmin;
 }
 
 .SelectedLink:hover {
   background-color: #00ADB5;
+  border-radius: 0.5vmin;
 }
 
 .Highlight {
@@ -47,4 +49,8 @@
 .NavAndBox {
   display:inline-block;
   margin-left: 2vw;
+}
+
+.Line {
+  height: 0.25vh;
 }
