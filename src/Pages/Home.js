@@ -1,5 +1,6 @@
 import React, {useEffect} from "react";
 import './Home.css';
+import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel";
 
 const Home = () => {
     
