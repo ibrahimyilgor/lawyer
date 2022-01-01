@@ -21,12 +21,11 @@ const TopNavigation = () => {
     }
   }, [location]);
 
-
   return (
     <div>
       <div  className="TopNav">
         <div>
-          <img alt="logo" width="100px" src={logo} />
+          <img alt="logo" width="100vmin" src={logo} />
         </div>
         <div className="NavAndBox">
           <NavLink to="/" className={selected===1 ? "SelectedLink" : "Link"} >Ana Sayfa</NavLink>

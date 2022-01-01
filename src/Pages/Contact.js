@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import './Contact.css';
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
+import useWindowSize from "../useWindowSize";
 
 const Users = ({ 
   google, 
@@ -8,6 +9,12 @@ const Users = ({
     lat: 37.0026,
     lng: 35.3255
 }] }) => {
+
+  const windowSize = useWindowSize();
+
+  /*useEffect(() => {
+    console.log("windowSize",windowSize);
+ }, [windowSize]);*/
 
   useEffect(() => {
     document.title = "İYS HUKUK - İletişim"
@@ -30,14 +37,18 @@ Quisque faucibus eget velit sed rhoncus. Pellentesque vel massa viverra, sollici
       <div className="Right">
         <Map
             google={google}
-            containerStyle={{
+            containerStyle={windowSize.innerHeight<=windowSize.innerWidth ? {
               width: "44vw",
               height: "83vh"
-          }}
-            style={{  
+            } : { 
+              width: "100%",
+              height: "50vh"}}
+            style={windowSize.innerHeight<=windowSize.innerWidth ? {
               width: "44vw",
               height: "83vh"
-            }}
+            } : { 
+              width: "100%",
+              height: "50vh"}}
             center={locations[0]}
             initialCenter={locations[0]}
             zoom={locations.length === 1 ? 16 : 15}

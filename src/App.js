@@ -8,6 +8,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import TopNavigation from "./Navigation/TopNavigation";
+import './App.css';
 
 export default function App() {
   
@@ -17,7 +18,7 @@ export default function App() {
 
   return (
     <Router>
-      <div>
+      <div className="Root">
         <TopNavigation/>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}

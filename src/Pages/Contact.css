@@ -12,7 +12,7 @@
     color:darkslategray ;
     float:left;
     height: 85vh;
-    width: 53vw;
+    width: calc(53vw - (100vw - 100%));
     padding-left: 1vw;
 }
 
@@ -20,34 +20,32 @@
     background-color:#393E46 ;
     float:right;
     height: 84vh;
-    width: 45vw;    
+    width: 45vw;
     padding-top: 1vh;
     padding-left: 1vw;
 }
 
-@media (orientation: portrait){
+@media (orientation: portrait){ 
     .Text {
         text-align: justify;
         color:#EEEEEE;
-    }
-    
-    .Root{
-        flex-direction: column;
+        padding-right:1vw;
     }
     
     .Left{
         background-color:#393E46 ;
         color:darkslategray ;
-        height: 42.5vh;
-        width: 100vw;
-        padding-left: 1vw;
+        width: auto; 
+        height: auto;
     }
     
     .Right{
         background-color:#393E46 ;
-        height: 42.5vh;
-        width: 98vw;    
-        padding-top: 1vh;
-        padding-left: 1vw;
+        width: 100%; 
+        height:auto;
+    }
+
+    .Root{
+        flex-direction: column;
     }
 }

@@ -6,7 +6,7 @@
   background-color:#222831 ;
   color:honeydew ;
   height: 14.75vh;
-  width: 100vw;
+  width: calc(100vw - (100vw - 100%));
 }
 
 .Link {
