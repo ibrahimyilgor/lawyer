@@ -12,8 +12,10 @@
     color:darkslategray ;
     float:left;
     height: 85vh;
-    width: calc(53vw - (100vw - 100%));
+    width: calc(52vw - (100vw - 100%));
     padding-left: 1vw;
+    padding-right: 1vw;
+    overflow-y: scroll;
 }
 
 .Right{
@@ -37,6 +39,7 @@
         color:darkslategray ;
         width: auto; 
         height: auto;
+        overflow-y: hidden;
     }
     
     .Right{
