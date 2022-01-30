@@ -7,6 +7,36 @@
     flex-direction: row;
 }
 
+.IconAndText{
+    margin-top:3vh;
+    height:24vh;
+    flex-direction: column;
+    border-style: groove;
+    border-color: #EEEEEE;
+    border-width: 1px;
+    background-color: #222831AA;
+    border-radius: 1vh;
+}
+
+.Icon{
+    height: 24vh;
+    float:left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left:1vw;
+    margin-right:1vw;
+}
+
+.P{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 20vh;
+    padding-right:2vw;
+}
+
+
 .Left{
     background-color:#393E46 ;
     color:darkslategray ;
@@ -15,17 +45,20 @@
     width: calc(52vw - (100vw - 100%));
     padding-left: 1vw;
     padding-right: 1vw;
-    overflow-y: scroll;
 }
 
 .Right{
     background-color:#393E46 ;
     float:right;
-    height: 84vh;
+    height: 81.5vh;
     width: 45vw;
-    padding-top: 1vh;
+    padding-top: 3.5vh;
     padding-left: 1vw;
 }
+
+a {
+    color: #EEEEEE;
+  }
 
 @media (orientation: portrait){ 
     .Text {
@@ -50,5 +83,16 @@
 
     .Root{
         flex-direction: column;
+    }
+
+    .IconAndText{
+        margin-top:3vh;
+        height:24vh;
+        flex-direction: column;
+        border-style: groove;
+        border-color: #EEEEEE;
+        border-width: 1px;
+        background-color: #222831AA;
+        border-radius: 1vh;
     }
 }
