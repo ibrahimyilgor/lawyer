@@ -95,4 +95,13 @@ a {
         background-color: #222831AA;
         border-radius: 1vh;
     }
+
+    .P{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 20vh;
+        padding-right:2vw;
+        font-size:100%;
+    }
 }

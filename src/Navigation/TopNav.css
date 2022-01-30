@@ -1,12 +1,20 @@
 .TopNav {
   text-align: center;
-  flex-direction:row;
-  align-items:stretch;
   display:table;
   background-color:#222831 ;
   color:honeydew ;
   height: 14.75vh;
   width: calc(100vw - (100vw - 100%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.RightTopNav{
+  height: 14.75vh;
+  width: 100%;
+  margin-right:5vw;
 }
 
 .Link {
@@ -49,10 +57,17 @@
 .NavAndBox {
   display:inline-block;
   margin-left: 2vw;
+  margin-top: 5.5vh;
 }
 
 .Line {
   height: 0.25vh;
+}
+
+.Logo {
+  margin-left:0.5vw;
+  width: auto;
+  height: 13vh;
 }
 
 @media (orientation: portrait){ 
