@@ -72,17 +72,12 @@ a {
         color:darkslategray ;
         width: auto; 
         height: auto;
-        overflow-y: hidden;
     }
     
     .Right{
         background-color:#393E46 ;
         width: 100%; 
         height:auto;
-    }
-
-    .Root{
-        flex-direction: column;
     }
 
     .IconAndText{
