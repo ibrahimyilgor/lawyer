@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import Slider from "../Slider/Slider";
 import './Home.css';
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <h2>ANA SAYFA</h2>
+      <Slider/>
     </div>
     
   );
