@@ -22,6 +22,7 @@
   text-decoration: 'none';
   font-size: 2.5vmin;
   text-decoration: none;
+  padding:0.3vh;
 }
 
 .Link:hover {
@@ -34,6 +35,7 @@
   color:ivory ;
   text-decoration: none;
   font-size: 2.5vmin;
+  padding:0.3vh;
 }
 
 .SelectedLink:hover {

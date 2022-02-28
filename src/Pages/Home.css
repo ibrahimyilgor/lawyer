@@ -1,3 +1,13 @@
 .Home {
-    height: 80vh;
+    height: 85vh;
+    display: flex;
   }
+
+.Left{
+  float:left;
+}
+
+.Right{
+  float:right;
+  color: ivory;
+}

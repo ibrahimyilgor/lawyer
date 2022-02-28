@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './Slider.css'
 import BtnSlider from './BtnSlider'
 import dataSlider from './dataSlider'
 
-export default function Slider() {
+export default function Slider({slideIndex,setSlideIndex}) {
 
-    const [slideIndex, setSlideIndex] = useState(1)
+   
 
     var pages = [
         "https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss.jpg",
