@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './TopNav.css';
 import logo from '../logo.png'; // with import
+import logo2 from '../logo2.png'; // with import
 import {NavLink, useLocation} from "react-router-dom";
 
 const TopNavigation = () => {
@@ -24,8 +25,13 @@ const TopNavigation = () => {
   return (
     <div>
       <div  className="TopNav">
-        <div className="Logo">
-          <img alt="logo" height="100%" src={logo} />
+        <div className="Logos">
+          <div className="Logo">
+            <img alt="logo2" width="100vw" height="auto" src={logo2} />
+          </div>
+          <div className="Logo">
+            <img alt="logo" width="400vw" height="auto" src={logo} />
+          </div>
         </div>
         <div className="RightTopNav">
           <div className="NavAndBox">

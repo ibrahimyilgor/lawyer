@@ -3,25 +3,23 @@ import './Contact.css';
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 import useWindowSize from "../useWindowSize";
 
-import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
 import MapIcon from '@mui/icons-material/Map';
 import CallIcon from '@mui/icons-material/Call';
 
 const Users = ({ 
   google, 
   locations = [{
-    lat: 37.0026,
-    lng: 35.3255
+    lat: 39.90951578151801,
+    lng: 32.85853954488611
 }] }) => {
-
   const windowSize = useWindowSize();
-
   /*useEffect(() => {
     console.log("windowSize",windowSize);
  }, [windowSize]);*/
 
   useEffect(() => {
-    document.title = "İYS HUKUK - İletişim"
+    document.title = "BALAY | DİRİM - İletişim"
  }, []);
 
   return (
@@ -32,27 +30,45 @@ const Users = ({
             <div className="Icon">
               <MapIcon sx={{ fontSize: 80 }}></MapIcon>
             </div>
-            <p className="P">
-              X Caddesi Y Sokak Z Önü XYZ Apartmanı No:5 Seyhan/Adana
-            </p>
+            <h3 className="P">
+              Kavaklıdere Mahallesi Bestekar Caddesi Sadibey Apartmanı No:40/2 Çankaya/Ankara
+            </h3>
           </div>
           <div className="IconAndText">
-          <div className="Icon">
-            <CallIcon sx={{ fontSize: 80 }}></CallIcon>
+            <div className="Icon">
+              <CallIcon sx={{ fontSize: 80 }}></CallIcon>
+              </div>
+              <h3 className="P2">
+                {"Av. Ömer Alperen Balay"}
+              </h3>
+              <h3 className="P3">
+                {"+90 532 013 43 29"}
+              </h3>
+              <h3 className="P2">
+                {"Av. Bahadır Dirim"}
+              </h3>
+              <h3 className="P3">
+                {"+90 551 599 02 24"}
+              </h3>
             </div>
-            <p className="P">
-              +90 555 555 55 55
-            </p>
-          </div>
           
           
           <div className="IconAndText">
           <div className="Icon">
-            <InstagramIcon sx={{ fontSize: 80 }} ></InstagramIcon>
+            <EmailIcon sx={{ fontSize: 80 }} ></EmailIcon>
             </div>
-            <p className="P">
-            <a href="https://www.instagram.com/iyshukuk/">İYS HUKUK Instagram Hesabı</a> 
-            </p>
+            <h3 className="P2">
+              {"Av. Ömer Alperen Balay"}
+            </h3>
+            <h3 className="P2">
+              {"omer.alperen@icloud.com"}
+            </h3>
+            <h3 className="P2">
+              {"Av. Bahadır Dirim"}
+            </h3>
+            <h3 className="P2">
+              {"av.bahadir.dirim@gmail.com"}
+            </h3>
           </div> 
         </div>
       </div>

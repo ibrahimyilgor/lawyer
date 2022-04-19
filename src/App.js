@@ -13,7 +13,7 @@ import './App.css';
 export default function App() {
   
   useEffect(() => {
-    document.title = "İYS HUKUK - Ana Sayfa"
+    document.title = "BALAY | DİRİM - Ana Sayfa"
  }, []);
 
   return (

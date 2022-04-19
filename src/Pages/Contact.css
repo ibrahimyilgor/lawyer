@@ -1,6 +1,6 @@
 .Text {
     text-align: justify;
-    color:#EEEEEE;
+    color:#ffffff;
 }
 
 .Root{
@@ -11,11 +11,11 @@
     margin-top:3vh;
     height:24vh;
     flex-direction: column;
-    border-style: groove;
-    border-color: #EEEEEE;
-    border-width: 1px;
-    background-color: #222831AA;
-    border-radius: 1vh;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+    background-color: #000000ee;
+    border-radius: 4vh;
 }
 
 .Icon{
@@ -36,9 +36,24 @@
     padding-right:2vw;
 }
 
+.P2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-right:2vw;
+}
+
+.P3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-right:2vw;
+}
+
+
 
 .Left{
-    background-color:#393E46 ;
+    background-color:#ffffff ;
     color:darkslategray ;
     float:left;
     height: 85vh;
@@ -48,7 +63,7 @@
 }
 
 .Right{
-    background-color:#393E46 ;
+    background-color:#ffffff ;
     float:right;
     height: 81.5vh;
     width: 45vw;
@@ -63,19 +78,19 @@ a {
 @media (orientation: portrait){ 
     .Text {
         text-align: justify;
-        color:#EEEEEE;
+        color:#000000;
         padding-right:1vw;
     }
     
     .Left{
-        background-color:#393E46 ;
+        background-color:#ffffff ;
         color:darkslategray ;
         width: auto; 
         height: auto;
     }
     
     .Right{
-        background-color:#393E46 ;
+        background-color:#ffffff ;
         width: 100%; 
         height:auto;
     }
@@ -87,7 +102,7 @@ a {
         border-style: groove;
         border-color: #EEEEEE;
         border-width: 1px;
-        background-color: #222831AA;
+        background-color: #ffffffAA;
         border-radius: 1vh;
     }
 
