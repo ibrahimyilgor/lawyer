@@ -11,7 +11,7 @@ import TopNavigation from "./Navigation/TopNavigation";
 import './App.css';
 
 export default function App() {
-  
+   
   useEffect(() => {
     document.title = "BALAY | DİRİM - Ana Sayfa"
  }, []);
