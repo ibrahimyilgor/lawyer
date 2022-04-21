@@ -41,6 +41,7 @@
     justify-content: center;
     display: flex;
     padding-right:2vw;
+    font-size: 2vh;
 }
 
 .P3{
@@ -48,9 +49,8 @@
     justify-content: center;
     display: flex;
     padding-right:2vw;
+    font-size: 2vh;
 }
-
-
 
 .Left{
     background-color:#ffffff ;
@@ -78,7 +78,7 @@ a {
 @media (orientation: portrait){ 
     .Text {
         text-align: justify;
-        color:#000000;
+        color:#ffffff;
         padding-right:1vw;
     }
     
@@ -102,7 +102,7 @@ a {
         border-style: groove;
         border-color: #EEEEEE;
         border-width: 1px;
-        background-color: #ffffffAA;
+        background-color: #000000;
         border-radius: 1vh;
     }
 
