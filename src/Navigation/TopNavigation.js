@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import './TopNav.css';
 import logo from '../logo.png'; // with import
 import logo2 from '../logo2.png'; // with import
-import {NavLink, useLocation} from "react-router-dom";
 import ListIcon from '@mui/icons-material/List';
 import useWindowDimensions from '../getDimensions';
 import { IconButton, Popover, Typography } from '@mui/material';
+import { div } from "react-router-dom";
 
 const TopNavigation = () => {
   const dim = useWindowDimensions();
 
-  const location = useLocation();
   const [selected,setSelected] = useState(0);
 
   const [aboutItems, setAboutItems] = useState(false);
@@ -28,20 +27,6 @@ const TopNavigation = () => {
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
 
-  useEffect(() => {
-    console.log(location.pathname);
-
-    if(location.pathname === "/"){
-      setSelected(1);
-    }
-    else if(location.pathname === "/hakkimizda"){
-      setSelected(2);
-    }
-    else if(location.pathname === "/iletisim"){
-      setSelected(3);
-    }
-  }, [location]);
-
   return (
     <div>
       <div  className="TopNav">
@@ -54,16 +39,29 @@ const TopNavigation = () => {
           </div>
         </div>
         <div className="RightTopNav">
-          {dim.width > dim.height && (<><div className="NavAndBox">
-            <NavLink to="/" className={selected === 1 ? "SelectedLink" : "Link"}>Ana Sayfa</NavLink>
+          {dim.width > dim.height && (
+          <>
+          <div className="NavAndBox">
+            <div to="/" className={selected === 1 ? "Selecteddiv" : "div"}><a href="#birinci">Birinci</a></div>
             <div className={selected === 1 ? "Highlight" : "NoHighlight"}></div>
-          </div><div className="NavAndBox">
-              <NavLink to="/hakkimizda" className={selected === 2 ? "SelectedLink" : "Link"}>Hakkımızda</NavLink>
+          </div>
+          <div className="NavAndBox">
+              <div to="/hakkimizda" className={selected === 2 ? "Selecteddiv" : "div"}><a href="#ikinci">İkinci</a></div>
               <div className={selected === 2 ? "Highlight" : "NoHighlight"}></div>
-            </div><div className="NavAndBox">
-              <NavLink to="/iletisim" className={selected === 3 ? "SelectedLink" : "Link"}>İletişim</NavLink>
+            </div>
+            <div className="NavAndBox">
+              <div to="/iletisim" className={selected === 3 ? "Selecteddiv" : "div"}><a href="#ucuncu">Üçüncü</a></div>
               <div className={selected === 3 ? "Highlight" : "NoHighlight"}></div>
-            </div></>)}
+            </div>
+            <div className="NavAndBox">
+              <div to="/iletisim" className={selected === 3 ? "Selecteddiv" : "div"}><a href="#dorduncu">Dördüncü</a></div>
+              <div className={selected === 3 ? "Highlight" : "NoHighlight"}></div>
+            </div>
+            <div className="NavAndBox">
+              <div to="/iletisim" className={selected === 3 ? "Selecteddiv" : "div"}><a href="#besinci">İletişim</a></div>
+              <div className={selected === 3 ? "Highlight" : "NoHighlight"}></div>
+            </div>
+            </>)}
           {dim.width <= dim.height && (
             <IconButton style={{maxWidth: 'auto', maxHeight: 'auto', minWidth: 'auto', minHeight: 'auto'}} onClick={handleClick} /* className={classes.iconbutton} */ aria-label="delete">
               <ListIcon fontSize="large" />
@@ -86,20 +84,20 @@ const TopNavigation = () => {
           >
             <>
               <div className="PopoverItem">
-              <NavLink to="/" className={selected === 1 ? "SelectedLink" : "Link"}>Ana Sayfa</NavLink>
+              <div to="/" className={selected === 1 ? "Selecteddiv" : "div"}>Ana Sayfa</div>
               </div>
               <div className="PopoverItem">
-              <NavLink to="/hakkimizda" className={selected === 2 ? "SelectedLink" : "Link"}>Hakkımızda</NavLink>
+              <div to="/hakkimizda" className={selected === 2 ? "Selecteddiv" : "div"}>Hakkımızda</div>
               </div>
               {/* {aboutItems && (
                 <><div className="PopoverItem">
-                  <NavLink to="/" className={selected === 1 ? "SelectedLink" : "Link"}>Ana Sayfa</NavLink>
+                  <Navdiv to="/" className={selected === 1 ? "Selecteddiv" : "div"}>Ana Sayfa</Navdiv>
                 </div><div className="PopoverItem">
-                    <NavLink to="/hakkimizda" className={selected === 2 ? "SelectedLink" : "Link"}>Hakkımızda</NavLink>
+                    <Navdiv to="/hakkimizda" className={selected === 2 ? "Selecteddiv" : "div"}>Hakkımızda</Navdiv>
                   </div></>)
               } */}
               <div className="PopoverItem">
-              <NavLink to="/iletisim" className={selected === 3 ? "SelectedLink" : "Link"}>İletişim</NavLink>
+              <div to="/iletisim" className={selected === 3 ? "Selecteddiv" : "div"}>İletişim</div>
               </div>
            </>
           </Popover>

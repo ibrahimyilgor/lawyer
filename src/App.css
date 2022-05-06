@@ -3,3 +3,34 @@
     overflow-y: hidden;
     background-color:#ffffff;
 }
+
+.container {
+    margin-top: 14.75vh;
+    height: 85.25vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section {
+    height: 85.25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: green;
+}
+
+.three {
+    background-color: blue;
+}
+
+.four {
+    background-color: yellow;
+}

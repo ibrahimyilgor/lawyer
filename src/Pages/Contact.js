@@ -6,6 +6,7 @@ import useWindowSize from "../useWindowSize";
 import EmailIcon from '@mui/icons-material/Email';
 import MapIcon from '@mui/icons-material/Map';
 import CallIcon from '@mui/icons-material/Call';
+import PersonIcon from '@mui/icons-material/Person';
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
@@ -40,20 +41,17 @@ const Users = ({
           </div>
           <div className="IconAndText">
             <div className="Icon">
-              <CallIcon sx={{ height: "10vh", width: "10vh"}}></CallIcon>
+              <PersonIcon sx={{ height: "10vh", width: "10vh"}}></PersonIcon>
               </div>
               <Box sx={{ height: "100%", display: "flex", justifyContent: "space-between", flexDirection: "column"}}>
                 <Grid xs={12} >
                   <Typography sx={{textDecoration: "underline", fontSize: "2.5vh", textAlign:"center",  height: "100%", display: "grid", alignItems: "center"}}>{"Av. Ömer Alperen Balay"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography sx={{fontSize: "2.5vh", textAlign:"center",  height: "100%"}}>{"+90 532 013 43 29"}</Typography>
+                  <Typography sx={{fontSize: "2.5vh", textAlign:"center",  height: "100%", display:"grid", alignItems: "center"}}>{"+90 532 013 43 29"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography sx={{textDecoration: "underline", fontSize: "2.5vh", textAlign:"center",  height: "100%", display: "grid", alignItems: "center"}}>{"Av. Bahadır Dirim"}</Typography>
-                </Grid>
-                <Grid xs={12}>
-                  <Typography sx={{fontSize: "2.5vh", textAlign:"center",  height: "100%"}}>{"+90 551 599 02 24"}</Typography>
+                  <Typography sx={{fontSize: "2.5vh", textAlign:"center", height: "100%", display:"grid", alignItems: "center" }}> {"omer.alperen@icloud.com"}</Typography>
                 </Grid>
               </Box>
              {/*  <h3 className="P2">
@@ -73,20 +71,17 @@ const Users = ({
           
           <div className="IconAndText">
           <div className="Icon">
-            <EmailIcon sx={{ height: "10vh", width: "10vh"}} ></EmailIcon>
+            <PersonIcon sx={{ height: "10vh", width: "10vh"}} ></PersonIcon>
             </div>
             <Box sx={{ height: "100%", display: "flex", justifyContent: "space-between", flexDirection: "column"}}>
                 <Grid xs={12} >
-                  <Typography sx={{textDecoration: "underline", fontSize: "2.5vh", textAlign:"center", height: "100%", display: "grid", alignItems: "center"}}>{"Av. Ömer Alperen Balay"}</Typography>
-                </Grid>
-                <Grid xs={12}>
-                  <Typography sx={{fontSize: "2.5vh", textAlign:"center", height: "100%"}}> {"omer.alperen@icloud.com"}</Typography>
-                </Grid>
-                <Grid xs={12}>
                   <Typography sx={{textDecoration: "underline", fontSize: "2.5vh", textAlign:"center", height: "100%", display: "grid", alignItems: "center"}}>{"Av. Bahadır Dirim"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography sx={{fontSize: "2.5vh", textAlign:"center", height: "100%"}}>{"av.bahadir.dirim@gmail.com"}</Typography>
+                  <Typography sx={{fontSize: "2.5vh", textAlign:"center",  height: "100%", display:"grid", alignItems: "center"}}> {"+90 551 599 02 24"}</Typography>
+                </Grid>
+                <Grid xs={12}>
+                  <Typography sx={{fontSize: "2.5vh", textAlign:"center",  height: "100%", display:"grid", alignItems: "center"}}>{"av.bahadir.dirim@gmail.com"}</Typography>
                 </Grid>
               </Box>
             {/* <h3 className="P2">
@@ -108,6 +103,7 @@ const Users = ({
         <Map
             google={google}
             containerStyle={windowSize.innerHeight<=windowSize.innerWidth ? {
+              position: "relative",
               width: "44vw",
               height: "77vh",
               

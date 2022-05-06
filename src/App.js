@@ -17,11 +17,29 @@ export default function App() {
  }, []);
 
   return (
-    <Router>
+    <div class="container">
+      <>
+        <TopNavigation/>
+        <section id="birinci" class="one">
+          <h1>First Page</h1>
+        </section>
+        <section id="ikinci" class="two">
+            <h1>Second Page</h1>
+        </section>
+        <section id="ucuncu" class="three">
+          <h1>Third Page</h1>
+        </section>
+        <section id="dorduncu" class="four">
+          <h1>Fourth Page</h1>
+        </section>
+        <section id="besinci" >
+          <Contact/>
+        </section>
+      </>
+    </div>
+    /* <Router>
       <div className="Root">
         <TopNavigation/>
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Routes>
           <Route path="/hakkimizda" element={<About />} >
           </Route>
@@ -31,6 +49,7 @@ export default function App() {
           </Route>
         </Routes>
       </div>
-    </Router>
+    </Router> */
+    
   );
 }
