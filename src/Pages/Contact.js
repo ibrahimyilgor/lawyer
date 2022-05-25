@@ -22,7 +22,7 @@ const Users = ({
  }, [windowSize]);*/
 
   useEffect(() => {
-    document.title = "BALAY | DİRİM - İletişim"
+    document.title = "BALAY | DİRİM"
  }, []);
 
   return (
@@ -31,27 +31,27 @@ const Users = ({
         <div className="Text">
           <div className="IconAndText">
             <div className="Icon">
-              <MapIcon sx={{ height: "10vh", width: "10vh"}}></MapIcon>
+              <MapIcon style={{ height: "10vh", width: "10vh"}}></MapIcon>
             </div>
-            <Box sx={{ height: "100%", display: "flex", justifyContent: "space-between", flexDirection: "column"}}>
+            <Box style={{ height: "100%", display: "flex", justifyContent: "center", flexDirection: "column"}}>
                 <Grid xs={12} >
-                  <Typography sx={{fontSize: "2.5vh", textAlign:"center", height: "100%", display: "grid", alignItems: "center"}}>Kavaklıdere Mahallesi Bestekar Caddesi Sadibey Apartmanı No: 40/2 Çankaya/Ankara</Typography>
+                  <Typography style={{fontSize: "2.5vh", textAlign:"center", height: "100%", display: "grid", alignItems: "center"}}>Kavaklıdere Mahallesi Bestekar Caddesi Sadibey Apartmanı No: 40/2 Çankaya/Ankara</Typography>
                 </Grid>
               </Box>
           </div>
           <div className="IconAndText">
             <div className="Icon">
-              <PersonIcon sx={{ height: "10vh", width: "10vh"}}></PersonIcon>
+              <PersonIcon style={{ height: "10vh", width: "10vh"}}></PersonIcon>
               </div>
-              <Box sx={{ height: "100%", display: "flex", justifyContent: "space-between", flexDirection: "column"}}>
+              <Box style={{ height: "100%", display: "flex", justifyContent: "center", flexDirection: "column"}}>
                 <Grid xs={12} >
-                  <Typography sx={{textDecoration: "underline", fontSize: "2.5vh", textAlign:"center",  height: "100%", display: "grid", alignItems: "center"}}>{"Av. Ömer Alperen Balay"}</Typography>
+                  <Typography style={{textDecoration: "underline", fontSize: "3vh", textAlign:"center",  height: "100%", display: "grid", alignItems: "center"}}>{"Av. Ömer Alperen Balay"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography sx={{fontSize: "2.5vh", textAlign:"center",  height: "100%", display:"grid", alignItems: "center"}}>{"+90 532 013 43 29"}</Typography>
+                  <Typography style={{fontSize: "2.5vh", textAlign:"center",  height: "100%", display:"grid", alignItems: "center"}}>{"+90 532 013 43 29"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography sx={{fontSize: "2.5vh", textAlign:"center", height: "100%", display:"grid", alignItems: "center" }}> {"omer.alperen@icloud.com"}</Typography>
+                  <Typography style={{fontSize: "2.5vh", textAlign:"center", height: "100%", display:"grid", alignItems: "center" }}> {"omer.alperen@icloud.com"}</Typography>
                 </Grid>
               </Box>
              {/*  <h3 className="P2">
@@ -71,17 +71,17 @@ const Users = ({
           
           <div className="IconAndText">
           <div className="Icon">
-            <PersonIcon sx={{ height: "10vh", width: "10vh"}} ></PersonIcon>
+            <PersonIcon style={{ height: "10vh", width: "10vh"}} ></PersonIcon>
             </div>
-            <Box sx={{ height: "100%", display: "flex", justifyContent: "space-between", flexDirection: "column"}}>
+            <Box style={{ height: "100%", display: "flex", justifyContent: "center", flexDirection: "column"}}>
                 <Grid xs={12} >
-                  <Typography sx={{textDecoration: "underline", fontSize: "2.5vh", textAlign:"center", height: "100%", display: "grid", alignItems: "center"}}>{"Av. Bahadır Dirim"}</Typography>
+                  <Typography style={{textDecoration: "underline", fontSize: "3vh", textAlign:"center", height: "100%", display: "grid", alignItems: "center"}}>{"Av. Bahadır Dirim"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography sx={{fontSize: "2.5vh", textAlign:"center",  height: "100%", display:"grid", alignItems: "center"}}> {"+90 551 599 02 24"}</Typography>
+                  <Typography style={{fontSize: "2.5vh", textAlign:"center",  height: "100%", display:"grid", alignItems: "center"}}> {"+90 551 599 02 24"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography sx={{fontSize: "2.5vh", textAlign:"center",  height: "100%", display:"grid", alignItems: "center"}}>{"av.bahadir.dirim@gmail.com"}</Typography>
+                  <Typography style={{fontSize: "2.5vh", textAlign:"center",  height: "100%", display:"grid", alignItems: "center"}}>{"av.bahadir.dirim@gmail.com"}</Typography>
                 </Grid>
               </Box>
             {/* <h3 className="P2">

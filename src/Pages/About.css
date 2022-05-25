@@ -1,104 +1,23 @@
 .About {
-    background-color:#ffffff;
-    height: 85vh;
-    display: flex;
-    color:#000000;
-  }
-
-img {
-  border-radius: 5%;
+  height: 85vh;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 
-.PhotoAndText{
-    margin:1vh;
-    width:33vw;
-    height: 83vh;
-    border-style: groove;
-    border-color: #EEEEEE;
-    border-width: 1px;
-    background-color: #ffffffAA;
-    border-radius: 1vh;
-}
-
-.Top {
-  border-style: groove;
-  border-color: green;
-  border-width: 1px;
-  height: 25%;
-}
-
-.Bottom {
-  border-style: groove;
-  border-color: red;
-  border-width: 1px;
-  height: 73%;
-  margin: 1%;
-}
-
-.Photo {
-  border-style: groove;
-  border-color: yellow;
-  border-width: 1px;
-  width: 26%;
-  height: 94%;
+.LeftPart{
   float:left;
-  margin:1%;
+  height: 85vh;
+  width: 25vw;
 }
 
-.Title {
-  border-style: groove;
-  border-color: blue;
-  border-width: 1px;
-  width: 68%;
-  height: 94%;
-  float:right;
-  margin:1%;
+.MiddlePart{
+  height: 85vh;
+  width: 50vw;
 }
 
-@media (orientation: portrait){ 
-  .About {
-    background-color:#ffffff;
-    color:#000000;
-    flex-direction: column;
-    overflow-y: auto;
-    height: auto;
-  }
-
-  .PhotoAndText{
-    margin:1vh;
-    width: 95%;
-    height: 65vw;
-    border-style: groove;
-    border-color: #EEEEEE;
-    border-width: 1px;
-    background-color: #ffffffAA;
-    border-radius: 1vh;
-  }
-
-  .Top {
- 
-    height: 22vw;
-  }
-
-  .Bottom {
-
-    height: 40vw;
-    margin: 1%;
-  }
-
-  .Photo {
-
-    width: 20vw;
-    height: 20vw;
-    float:left;
-    margin:1%;
-  }
-
-  .Title {
- 
-    width: 66vw;
-    height: 20vw;
-    float:right;
-    margin:1%;
-  }
+.RightPart{
+  height: 85vh;
+  width: 25vw;
 }

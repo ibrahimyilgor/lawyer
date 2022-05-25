@@ -1,0 +1,32 @@
+.parent{
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    height: 85vh;
+    width: 30vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.right{
+    width: 63vw;
+    height: 81vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.pdf{
+    width: 80%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

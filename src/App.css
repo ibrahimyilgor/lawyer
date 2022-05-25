@@ -5,14 +5,14 @@
 }
 
 .container {
-    margin-top: 14.75vh;
-    height: 85.25vh;
+    margin-top: 15vh;
+    height: 85vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 
 section {
-    height: 85.25vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,11 +20,11 @@ section {
 }
 
 .one {
-    background-color: red;
+ 
 }
 
 .two {
-    background-color: green;
+
 }
 
 .three {

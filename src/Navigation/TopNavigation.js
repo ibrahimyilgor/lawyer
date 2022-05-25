@@ -7,10 +7,8 @@ import useWindowDimensions from '../getDimensions';
 import { IconButton, Popover, Typography } from '@mui/material';
 import { div } from "react-router-dom";
 
-const TopNavigation = () => {
+const TopNavigation = ({selected, setSelected}) => {
   const dim = useWindowDimensions();
-
-  const [selected,setSelected] = useState(0);
 
   const [aboutItems, setAboutItems] = useState(false);
 
@@ -24,11 +22,12 @@ const TopNavigation = () => {
     setAnchorEl(null);
   };
 
+
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
 
   return (
-    <div>
+
       <div  className="TopNav">
         <div className="Logos">
           <div className="Logo">
@@ -42,24 +41,24 @@ const TopNavigation = () => {
           {dim.width > dim.height && (
           <>
           <div className="NavAndBox">
-            <div to="/" className={selected === 1 ? "Selecteddiv" : "div"}><a href="#birinci">Birinci</a></div>
+            <div onClick={ () => setSelected(1)} className={selected === 1 ? "Selecteddiv" : "div"}><a href="#birinci">Birinci</a></div>
             <div className={selected === 1 ? "Highlight" : "NoHighlight"}></div>
           </div>
           <div className="NavAndBox">
-              <div to="/hakkimizda" className={selected === 2 ? "Selecteddiv" : "div"}><a href="#ikinci">İkinci</a></div>
+              <div onClick={ () => setSelected(2)} className={selected === 2 ? "Selecteddiv" : "div"}><a href="#ikinci">İkinci</a></div>
               <div className={selected === 2 ? "Highlight" : "NoHighlight"}></div>
             </div>
             <div className="NavAndBox">
-              <div to="/iletisim" className={selected === 3 ? "Selecteddiv" : "div"}><a href="#ucuncu">Üçüncü</a></div>
+              <div onClick={ () => setSelected(3)} className={selected === 3 ? "Selecteddiv" : "div"}><a href="#ucuncu">Üçüncü</a></div>
               <div className={selected === 3 ? "Highlight" : "NoHighlight"}></div>
             </div>
             <div className="NavAndBox">
-              <div to="/iletisim" className={selected === 3 ? "Selecteddiv" : "div"}><a href="#dorduncu">Dördüncü</a></div>
-              <div className={selected === 3 ? "Highlight" : "NoHighlight"}></div>
+              <div onClick={ () => setSelected(4)} className={selected === 3 ? "Selecteddiv" : "div"}><a href="#dorduncu">Dördüncü</a></div>
+              <div className={selected === 4 ? "Highlight" : "NoHighlight"}></div>
             </div>
             <div className="NavAndBox">
-              <div to="/iletisim" className={selected === 3 ? "Selecteddiv" : "div"}><a href="#besinci">İletişim</a></div>
-              <div className={selected === 3 ? "Highlight" : "NoHighlight"}></div>
+              <div onClick={ () => setSelected(5)} className={selected === 3 ? "Selecteddiv" : "div"}><a href="#besinci">İletişim</a></div>
+              <div className={selected === 5 ? "Highlight" : "NoHighlight"}></div>
             </div>
             </>)}
           {dim.width <= dim.height && (
@@ -82,30 +81,31 @@ const TopNavigation = () => {
               horizontal: 'center',
             }}
           >
-            <>
-              <div className="PopoverItem">
-              <div to="/" className={selected === 1 ? "Selecteddiv" : "div"}>Ana Sayfa</div>
+            <div style={{flexDirection:"column", display:"flex"}}>
+              <div className="NavAndBox">
+                <div onClick={ () => setSelected(1)} className={selected === 1 ? "SelectedLink" : "Link"}><a href="#birinci">Birinci</a></div>
+                <div className={selected === 1 ? "Highlight" : "NoHighlight"}></div>
               </div>
-              <div className="PopoverItem">
-              <div to="/hakkimizda" className={selected === 2 ? "Selecteddiv" : "div"}>Hakkımızda</div>
+              <div className="NavAndBox">
+                <div onClick={ () => setSelected(2)} className={selected === 2 ? "SelectedLink" : "Link"}><a href="#ikinci">İkinci</a></div>
+                <div className={selected === 2 ? "Highlight" : "NoHighlight"}></div>
               </div>
-              {/* {aboutItems && (
-                <><div className="PopoverItem">
-                  <Navdiv to="/" className={selected === 1 ? "Selecteddiv" : "div"}>Ana Sayfa</Navdiv>
-                </div><div className="PopoverItem">
-                    <Navdiv to="/hakkimizda" className={selected === 2 ? "Selecteddiv" : "div"}>Hakkımızda</Navdiv>
-                  </div></>)
-              } */}
-              <div className="PopoverItem">
-              <div to="/iletisim" className={selected === 3 ? "Selecteddiv" : "div"}>İletişim</div>
+              <div className="NavAndBox">
+                <div onClick={ () => setSelected(3)} className={selected === 3 ? "SelectedLink" : "Link"}><a href="#ucuncu">Üçüncü</a></div>
+                <div className={selected === 3 ? "Highlight" : "NoHighlight"}></div>
               </div>
-           </>
+              <div className="NavAndBox">
+                <div onClick={ () => setSelected(4)} className={selected === 3 ? "SelectedLink" : "Link"}><a href="#dorduncu">Dördüncü</a></div>
+                <div className={selected === 4 ? "Highlight" : "NoHighlight"}></div>
+              </div>
+              <div className="NavAndBox">
+                <div onClick={ () => setSelected(5)} className={selected === 3 ? "SelectedLink" : "Link"}><a href="#besinci">İletişim</a></div>
+                <div className={selected === 5 ? "Highlight" : "NoHighlight"}></div>
+              </div>
+            </div>
           </Popover>
         </div>
       </div>
-      <div className="Line">
-      </div>
-        </div>
   ); 
 }
 
