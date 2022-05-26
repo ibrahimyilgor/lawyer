@@ -16,13 +16,11 @@ export default function App() {
   const ref2 = useRef();
   const ref3 = useRef();
   const ref4 = useRef();
-  const ref5 = useRef();
 
   const onScreen1 = useOnScreen (ref1, "-50%");
   const onScreen2 = useOnScreen (ref2, "-50%");
   const onScreen3 = useOnScreen (ref3, "-50%");
   const onScreen4 = useOnScreen (ref4, "-50%");
-  const onScreen5 = useOnScreen (ref5, "-50%");
 
   const [selected,setSelected] = useState(0);
 
@@ -31,47 +29,40 @@ export default function App() {
  }, []);
 
  useEffect(() => {
-  console.log(onScreen1,onScreen2,onScreen3,onScreen4,onScreen5)
+  console.log(onScreen1,onScreen2,onScreen3,onScreen4)
   if(onScreen1){
     setSelected(1);
-    document.title = "BALAY | DİRİM - Birinci";
+    document.title = "BALAY | DİRİM - Hakkımızda";
   }
   else if(onScreen2){
     setSelected(2);
-    document.title = "BALAY | DİRİM - İkinci";
+    document.title = "BALAY | DİRİM - Çalışma Alanlarımız";
   }
   else if(onScreen3){
     setSelected(3);
-    document.title = "BALAY | DİRİM - Üçüncü";
+    document.title = "BALAY | DİRİM - Bilgi Merkezi";
   }
   else if(onScreen4){
     setSelected(4);
-    document.title = "BALAY | DİRİM - Dördüncü";
-  }
-  else if(onScreen5){
-    setSelected(5);
     document.title = "BALAY | DİRİM - İletişim";
   }
-}, [onScreen1,onScreen2,onScreen3,onScreen4,onScreen5]);
+}, [onScreen1,onScreen2,onScreen3,onScreen4]);
 
   return (
     <div class="container">
       <>
         <TopNavigation selected={selected} setSelected={setSelected}/>
-        <section ref={ref1} id="birinci" class="one">
+        <section ref={ref1} id="hakkimizda" class="one">
           <About/>
         </section>
-        <section ref={ref2} id="ikinci" class="two">
+        <section ref={ref2} id="calisma_alanlarimiz" class="two">
+        <h1>Çalışma Alanlarımız</h1>
+        </section>
+        <section ref={ref3} id="bilgi_merkezi" class="three">
           <Pdf/>
         </section>
-        <section ref={ref3} id="ucuncu" class="three">
-          <h1>Third Page</h1>
-        </section>
-        <section ref={ref4} id="dorduncu" class="four">
-          <h1>Fourth Page</h1>
-        </section>
-        <section ref={ref5} id="besinci" >
-          <Contact/>
+        <section ref={ref4} id="iletisim" class="four">
+        <Contact/>
         </section>
       </>
     </div>

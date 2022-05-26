@@ -41,24 +41,20 @@ const TopNavigation = ({selected, setSelected}) => {
           {dim.width > dim.height && (
           <>
           <div className="NavAndBox">
-            <div onClick={ () => setSelected(1)} className={selected === 1 ? "Selecteddiv" : "div"}><a href="#birinci">Birinci</a></div>
+            <div onClick={ () => setSelected(1)} className={selected === 1 ? "Selecteddiv" : "div"}><a href="#hakkimizda">Hakkımızda</a></div>
             <div className={selected === 1 ? "Highlight" : "NoHighlight"}></div>
           </div>
           <div className="NavAndBox">
-              <div onClick={ () => setSelected(2)} className={selected === 2 ? "Selecteddiv" : "div"}><a href="#ikinci">İkinci</a></div>
+              <div onClick={ () => setSelected(2)} className={selected === 2 ? "Selecteddiv" : "div"}><a href="#calisma_alanlarimiz">Çalışma Alanlarımız</a></div>
               <div className={selected === 2 ? "Highlight" : "NoHighlight"}></div>
             </div>
             <div className="NavAndBox">
-              <div onClick={ () => setSelected(3)} className={selected === 3 ? "Selecteddiv" : "div"}><a href="#ucuncu">Üçüncü</a></div>
+              <div onClick={ () => setSelected(3)} className={selected === 3 ? "Selecteddiv" : "div"}><a href="#bilgi_merkezi">Bilgi Merkezi</a></div>
               <div className={selected === 3 ? "Highlight" : "NoHighlight"}></div>
             </div>
             <div className="NavAndBox">
-              <div onClick={ () => setSelected(4)} className={selected === 3 ? "Selecteddiv" : "div"}><a href="#dorduncu">Dördüncü</a></div>
+              <div onClick={ () => setSelected(4)} className={selected === 3 ? "Selecteddiv" : "div"}><a href="#iletisim">İletişim</a></div>
               <div className={selected === 4 ? "Highlight" : "NoHighlight"}></div>
-            </div>
-            <div className="NavAndBox">
-              <div onClick={ () => setSelected(5)} className={selected === 3 ? "Selecteddiv" : "div"}><a href="#besinci">İletişim</a></div>
-              <div className={selected === 5 ? "Highlight" : "NoHighlight"}></div>
             </div>
             </>)}
           {dim.width <= dim.height && (
@@ -83,24 +79,20 @@ const TopNavigation = ({selected, setSelected}) => {
           >
             <div style={{flexDirection:"column", display:"flex"}}>
               <div className="NavAndBox">
-                <div onClick={ () => setSelected(1)} className={selected === 1 ? "SelectedLink" : "Link"}><a href="#birinci">Birinci</a></div>
+                <div onClick={ () => setSelected(1)} className={selected === 1 ? "SelectedLink" : "Link"}><a href="#hakkimizda">Hakkımızda</a></div>
                 <div className={selected === 1 ? "Highlight" : "NoHighlight"}></div>
               </div>
               <div className="NavAndBox">
-                <div onClick={ () => setSelected(2)} className={selected === 2 ? "SelectedLink" : "Link"}><a href="#ikinci">İkinci</a></div>
+                <div onClick={ () => setSelected(2)} className={selected === 2 ? "SelectedLink" : "Link"}><a href="#calisma_alanlarimiz">Çalışma Alanlarımız</a></div>
                 <div className={selected === 2 ? "Highlight" : "NoHighlight"}></div>
               </div>
               <div className="NavAndBox">
-                <div onClick={ () => setSelected(3)} className={selected === 3 ? "SelectedLink" : "Link"}><a href="#ucuncu">Üçüncü</a></div>
+                <div onClick={ () => setSelected(3)} className={selected === 3 ? "SelectedLink" : "Link"}><a href="#bilgi_merkezi">Bilgi Merkezi</a></div>
                 <div className={selected === 3 ? "Highlight" : "NoHighlight"}></div>
               </div>
               <div className="NavAndBox">
-                <div onClick={ () => setSelected(4)} className={selected === 3 ? "SelectedLink" : "Link"}><a href="#dorduncu">Dördüncü</a></div>
+                <div onClick={ () => setSelected(4)} className={selected === 3 ? "SelectedLink" : "Link"}><a href="#iletisim">İletişim</a></div>
                 <div className={selected === 4 ? "Highlight" : "NoHighlight"}></div>
-              </div>
-              <div className="NavAndBox">
-                <div onClick={ () => setSelected(5)} className={selected === 3 ? "SelectedLink" : "Link"}><a href="#besinci">İletişim</a></div>
-                <div className={selected === 5 ? "Highlight" : "NoHighlight"}></div>
               </div>
             </div>
           </Popover>

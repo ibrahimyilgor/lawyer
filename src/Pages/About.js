@@ -2,6 +2,9 @@ import React, {useEffect, useState} from "react";
 import Slider from "../Slider/Slider";
 import './About.css';
 
+import balay from '../Photos/balay.jpg'; // with import
+import dirim from '../Photos/dirim.jpg'; // with import
+
 const About = () => {
     
   useEffect(() => {
@@ -29,6 +32,7 @@ useEffect(() => {
     (
       <div className="About">
         <div className="LeftPart">
+        <img alt="logo2" width="100vw" height="auto" src={balay} class="keepRatio"/>
         </div>
         <div className="MiddlePart">
           <Slider
@@ -37,6 +41,7 @@ useEffect(() => {
           />
         </div>
         <div className="RightPart">
+        <img alt="logo2" width="100vw" height="auto" src={dirim} class="keepRatio"/>
         </div>
       </div>
       

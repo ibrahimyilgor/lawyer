@@ -50,7 +50,7 @@ export default function Slider({slideIndex,setSlideIndex}) {
             <div className="container-dots">
                 {Array.from({length: 2}).map((item, index) => (
                     <div 
-                    onClick={() => moveDot(index + 1)}
+                    onClick={() => moveDot(index)}
                     className={slideIndex === index ? "dot active" : "dot"}
                     ></div>
                 ))}
