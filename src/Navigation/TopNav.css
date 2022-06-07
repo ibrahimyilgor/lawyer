@@ -15,7 +15,7 @@
 
 .RightTopNav{
   height: 14.75vh;
-  width: 50vw;
+  width: 75vw;
   margin-right:5vw;
 }
 
@@ -97,7 +97,7 @@ a:hover {
 }
 
 .Logos {
-  width: 50vw;
+  width: 25vw;
   height: 10vh;
   display:flex;
   float:left;

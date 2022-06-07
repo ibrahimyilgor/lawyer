@@ -18,6 +18,12 @@ import ImageIcon from '@mui/icons-material/Image';
 import WorkIcon from '@mui/icons-material/Work';
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 
+import AllPagesPDFViewer from "../PdfAllPages";
+
+import samplePDF from "../PdfFiles/sample.pdf";
+import samplePDF2 from "../PdfFiles/sample2.pdf";
+import samplePDF3 from "../PdfFiles/sample3.pdf";
+
 const Pdf = () => {
   const windowSize = useWindowSize();
   /*useEffect(() => {
@@ -33,47 +39,216 @@ const Pdf = () => {
    const [pdfError, setPdfError]=useState('');
 
    const allowedFiles = ['application/pdf'];
+
+  const pdfs = [
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } ,
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } ,
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } ,
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } ,
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } ,
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } ,
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } ,
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } ,
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } ,
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } ,
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } ,
+    {
+      url:samplePDF,
+      name: "Sample1",
+      date: "4 Haz 22"
+    },
+    {
+      url:samplePDF2,
+      name: "Sample2",
+      date: "5 Haz 22"
+    },
+    {
+      url:samplePDF3,
+      name: "Sample3",
+      date: "6 Haz 22"
+    } 
+  ];
+
+  useEffect(() => {
+    setPdfFile(pdfs[selectedPdf].url)
+  }, [selectedPdf]);
    
   return (
     <div className="parent">
     <div className="left">
       {pdfError&&<span className='text-danger'>{pdfError}</span>}
-      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-        <ListItem onClick={()=>setSelectedPdf(0)}>
-          <ListItemAvatar>
-            <Avatar>
-              <ImageIcon />
-            </Avatar>
-          </ListItemAvatar>
-          <ListItemText primary="Photos" secondary="Jan 9, 2014" />
-        </ListItem>
-        <ListItem onClick={()=>setSelectedPdf(1)}>
-          <ListItemAvatar>
-            <Avatar>
-              <WorkIcon/>
-            </Avatar>
-          </ListItemAvatar>
-          <ListItemText primary="Work" secondary="Jan 7, 2014" />
-        </ListItem>
-        <ListItem onClick={()=>setSelectedPdf(2)}>
-          <ListItemAvatar>
-            <Avatar>
-              <BeachAccessIcon />
-            </Avatar>
-          </ListItemAvatar>
-          <ListItemText primary="Vacation" secondary="July 20, 2014" />
-        </ListItem>
+      <List sx={{ maxHeight: "90%", overflow: "auto", width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+        {pdfs.map( (pdf,index) => {
+          return (
+          <ListItem onClick={()=>setSelectedPdf(index)}>
+           <ListItemAvatar>
+             <Avatar>
+               <ImageIcon />
+             </Avatar>
+           </ListItemAvatar>
+           <ListItemText primary={pdf?.name} secondary={pdf?.date} />
+          </ListItem>
+          )
+        })}
       </List>
     </div>
     <div className="right">
-      <div className="pdf"> 
-            {/* <Viewer 
-            fileUrl='document.pdf'
-            plugins={[defaultLayoutPluginInstance]}></Viewer> */}
-
-
-        {/* render this if we have pdfFile state null   */}
-        {!pdfFile&&<>{selectedPdf}</>}
+      <div className="all-page-container">
+        <AllPagesPDFViewer pdf={pdfFile} />
       </div>
     </div>
 

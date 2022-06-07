@@ -2,6 +2,7 @@ import React from 'react'
 import './Slider.css'
 import BtnSlider from './BtnSlider'
 import dataSlider from './dataSlider'
+import { Typography } from "@mui/material";
 
 export default function Slider({slideIndex,setSlideIndex}) {
     const text = [
@@ -28,7 +29,7 @@ export default function Slider({slideIndex,setSlideIndex}) {
     }
 
     const moveDot = index => {
-        setSlideIndex(index)
+        setSlideIndex(index);
     }
 
     return (
@@ -38,14 +39,16 @@ export default function Slider({slideIndex,setSlideIndex}) {
                     <div
                     key={obj.id}
                     className={slideIndex === index ? "slide active-anim" : "slide"}
-                    >
-                        <h1>{ text[slideIndex].title}</h1>
-                        <h2>{ text[slideIndex].explanation}</h2>
+                    >   
+                        <div style={{height: "90%",  alignItems:"center", justifyContent: "center", display:"flex", flexDirection: "column", fontFamily: "inherit"}}>
+                            <Typography fontSize={30} sx={{marginTop: "10px", height: "10%",alignItems: "center", justifyContent: "center", display:"flex", fontFamily: "inherit"}}>{ text[slideIndex].title}</Typography>
+                            <Typography fontSize={20} sx={{overflowY: "auto", height: "90%",alignItems: "center", justifyContent: "center", display:"flex", fontFamily: "inherit"}}>{ text[slideIndex].explanation}</Typography>
+                        </div>
                     </div>
                 )
             })}
-            <BtnSlider moveSlide={nextSlide} direction={"next"} />
-            <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
+           {/*  <BtnSlider moveSlide={nextSlide} direction={"next"} />
+            <BtnSlider moveSlide={prevSlide} direction={"prev"}/> */}
 
             <div className="container-dots">
                 {Array.from({length: 2}).map((item, index) => (

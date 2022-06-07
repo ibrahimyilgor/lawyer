@@ -5,6 +5,9 @@ import './About.css';
 import balay from '../Photos/balay.jpg'; // with import
 import dirim from '../Photos/dirim.jpg'; // with import
 
+import balayBlack from '../Photos/balayBlack.jpg'; // with import
+import dirimBlack from '../Photos/dirimBlack.jpg'; // with import
+
 const About = () => {
     
   useEffect(() => {
@@ -13,9 +16,13 @@ const About = () => {
 
  const [slideIndex, setSlideIndex] = useState(0);
  const [time, setTime] = useState(Date.now());
+ const [duration, setDuration] = useState(5000);
+
+ const [leftHover, setLeftHover] = useState(false);
+ const [rightHover, setRightHover] = useState(false);
 
 useEffect(() => {
- const interval = setInterval(() => setTime(Date.now()), 5000);
+ const interval = setInterval(() => setTime(Date.now()), duration);
  return () => {
    console.log("slideindex",slideIndex);
    if(slideIndex === 2){ // BURADAKI 5 FOTO SAYISI
@@ -31,8 +38,8 @@ useEffect(() => {
   return (
     (
       <div className="About">
-        <div className="LeftPart">
-        <img alt="logo2" width="100vw" height="auto" src={balay} class="keepRatio"/>
+        <div className="LeftPart" onMouseOver={() => setLeftHover(true)} onMouseOut={() => setLeftHover(false)}>
+          <img alt="logo2" width="100vw" height="auto" src={leftHover ? balay : balayBlack} class="keepRatio"/>
         </div>
         <div className="MiddlePart">
           <Slider
@@ -40,8 +47,8 @@ useEffect(() => {
             setSlideIndex={setSlideIndex}
           />
         </div>
-        <div className="RightPart">
-        <img alt="logo2" width="100vw" height="auto" src={dirim} class="keepRatio"/>
+        <div className="RightPart" onMouseOver={() => setRightHover(true)} onMouseOut={() => setRightHover(false)}>
+        <img alt="logo2" width="100vw" height="auto" src={rightHover ? dirim : dirimBlack} class="keepRatio"/>
         </div>
       </div>
       
