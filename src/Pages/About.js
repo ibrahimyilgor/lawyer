@@ -46,6 +46,7 @@ useEffect(() => {
             slideIndex={slideIndex}
             setSlideIndex={setSlideIndex}
           />
+          
         </div>
         <div className="RightPart" onMouseOver={() => setRightHover(true)} onMouseOut={() => setRightHover(false)}>
         <img alt="logo2" width="100vw" height="auto" src={rightHover ? dirim : dirimBlack} class="keepRatio"/>

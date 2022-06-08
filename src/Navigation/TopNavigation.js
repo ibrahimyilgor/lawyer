@@ -49,7 +49,7 @@ const TopNavigation = ({selected, setSelected}) => {
               <div className={selected === 2 ? "Highlight" : "NoHighlight"}></div>
             </div>
             <div className="NavAndBox">
-              <div onClick={ () => setSelected(3)} className={selected === 3 ? "Selecteddiv" : "div"}><a href="#bilgi_merkezi">Bilgi Merkezi</a></div>
+              <div onClick={ () => setSelected(3)} className={selected === 3 ? "Selecteddiv" : "div"}><a href="#bilgi_merkezi">Bilgi Bankası</a></div>
               <div className={selected === 3 ? "Highlight" : "NoHighlight"}></div>
             </div>
             <div className="NavAndBox">
@@ -87,7 +87,7 @@ const TopNavigation = ({selected, setSelected}) => {
                 <div className={selected === 2 ? "Highlight" : "NoHighlight"}></div>
               </div>
               <div className="NavAndBox">
-                <div onClick={ () => setSelected(3)} className={selected === 3 ? "SelectedLink" : "Link"}><a href="#bilgi_merkezi">Bilgi Merkezi</a></div>
+                <div onClick={ () => setSelected(3)} className={selected === 3 ? "SelectedLink" : "Link"}><a href="#bilgi_merkezi">Bilgi Bankası</a></div>
                 <div className={selected === 3 ? "Highlight" : "NoHighlight"}></div>
               </div>
               <div className="NavAndBox">

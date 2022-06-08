@@ -4,9 +4,12 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+
 import Pdf from "./Pages/Pdf";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import WorkingAreas from "./Pages/WorkingAreas";
+
 import TopNavigation from "./Navigation/TopNavigation";
 import './App.css';
 import useOnScreen from "./useOnScreen";
@@ -40,7 +43,7 @@ export default function App() {
   }
   else if(onScreen3){
     setSelected(3);
-    document.title = "BALAY | DİRİM - Bilgi Merkezi";
+    document.title = "BALAY | DİRİM - Bilgi Bankası";
   }
   else if(onScreen4){
     setSelected(4);
@@ -56,13 +59,13 @@ export default function App() {
           <About/>
         </section>
         <section ref={ref2} id="calisma_alanlarimiz" class="two">
-        <h1>Çalışma Alanlarımız</h1>
+          <WorkingAreas/>
         </section>
         <section ref={ref3} id="bilgi_merkezi" class="three">
           <Pdf/>
         </section>
         <section ref={ref4} id="iletisim" class="four">
-        <Contact/>
+          <Contact/>
         </section>
       </>
     </div>
