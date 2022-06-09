@@ -4,25 +4,25 @@ import BtnSlider from './BtnSlider'
 import dataSlider from './dataSlider'
 import { Typography, Divider, Chip } from "@mui/material";
 import querencia from '../Photos/querencia.png'; // with import
-/* import { makeStyles } from "@mui/styles";
+ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(
     {
       divider: {
         '&.MuiDivider-root': {
           '&::before': {
-              borderTop: `thin solid #F6EABE`
+              borderTop: `thin solid #black`
           } ,
           '&::after': {
-            borderTop: `thin solid #F6EABE`
+            borderTop: `thin solid #black`
           } 
         }
       },
     }
   );
- */
+ 
 export default function Slider({slideIndex,setSlideIndex}) {
-    // const classes = useStyles();
+    const classes = useStyles();
 
     const text = [
         {title:"Hakkımızda",explanation:"Bizler; doğal hukuk anlayışı çerçevesinde hukuk eğitiminin, günümüz ihtiyaç ve koşullarına göre hayat boyu devam edeceği düşünüldüğünde mesleğinin henüz başında iki genç avukatız. Hukuk fakültesi lisans eğitimini 2016-2020 yılları arasında Sakarya Üniversitesi’nde aynı sıralarda birlikte tamamladık. Sonrasında avukatlık yasal stajımızı, daha etkin ve donanımlı geçirebilmek adına eğitim faaliyetleriyle ön plana çıkan Ankara Barosu’nda gerçekleştirme kararı aldık ve bu doğrultuda hukukun farklı alanlarına dair etkinliklere katılarak verimli bir staj dönemini geride bıraktık. Avukatlık hayatımıza ise kollektif çalışmanın bireysel çalışmaya oranla daha özenli olacağı inancıyla Balay | Dirim Hukuk ve Danışmanlık Bürosu’nu 2022 yılının Ocak ayı itibariyle faaliyete hazır hale getirerek başladık."},
@@ -61,8 +61,8 @@ export default function Slider({slideIndex,setSlideIndex}) {
                     >   
                         <div style={{height: "90%",  alignItems:"center", justifyContent: "center", display:"flex", flexDirection: "column", fontFamily: "inherit"}}>
                             <Typography fontSize={30} sx={{marginTop: "10px", height: "10%",alignItems: "center", justifyContent: "center", display:"flex", fontFamily: "inherit"}}>{ text[slideIndex].title}</Typography>
-                            <Typography fontSize={20} sx={{overflowY: "auto", height: "80%", display:"flex", fontFamily: "inherit"}}>{ text[slideIndex].explanation}</Typography>
-                            <Chip sx={{marginTop: "1%", height: "9%", color: "red"}} label='Querencia - "Kendinizi en güvende hissetttiğiniz yer"' />
+                            <Typography fontSize={20} sx={{overflowY: "auto", height: "80%", display:"flex", fontFamily: 'Gentium Plus'}}>{ text[slideIndex].explanation}</Typography>
+                            <Typography sx={{marginTop: "1%", height: "9%", color: "red", fontFamily: 'Gentium Plus'}} >Querencia - "Kendinizi en güvende hissetttiğiniz yer"</Typography>
                         </div>
                     </div>
                 )

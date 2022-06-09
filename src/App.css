@@ -1,3 +1,7 @@
+body{
+    font-family: 'Gentium Plus', serif;
+}
+
 .Root{
     overflow-x: hidden;
     overflow-y: hidden;

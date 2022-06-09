@@ -13,7 +13,7 @@ import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 // Import styles of default layout plugin
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import { Avatar, List, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
+import { Avatar, List, ListItem, ListItemAvatar, ListItemText, Tab } from "@mui/material";
 import ImageIcon from '@mui/icons-material/Image';
 import WorkIcon from '@mui/icons-material/Work';
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
@@ -35,6 +35,9 @@ const Pdf = () => {
    // pdf file onChange state
    const [pdfFile, setPdfFile]=useState(null);
    const [selectedPdf, setSelectedPdf] =useState(0);
+
+   const [value, setValue] = useState('0');
+ 
    // pdf file error state
    const [pdfError, setPdfError]=useState('');
 
@@ -231,7 +234,7 @@ const Pdf = () => {
     <div className="parent">
     <div className="left">
       {pdfError&&<span className='text-danger'>{pdfError}</span>}
-      <List sx={{ maxHeight: "90%", overflow: "auto", width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+      <List sx={{ maxHeight: "90%", overflow: "auto", fontFamily: 'Gentium Plus', width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
         {pdfs.map( (pdf,index) => {
           return (
           <ListItem onClick={()=>setSelectedPdf(index)}>
@@ -240,7 +243,7 @@ const Pdf = () => {
                <ImageIcon />
              </Avatar>
            </ListItemAvatar>
-           <ListItemText primary={pdf?.name} secondary={pdf?.date} />
+           <ListItemText disableTypography style={{ fontFamily: 'Gentium Plus'}} primary={pdf?.name} secondary={" " + pdf?.date} />
           </ListItem>
           )
         })}
