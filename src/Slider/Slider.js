@@ -67,7 +67,7 @@ export default function Slider({slideIndex,setSlideIndex}) {
                     >   
                         <div style={{height: "90%",  alignItems:"center", justifyContent: "center", display:"flex", flexDirection: "column", fontFamily: "inherit"}}>
                             <Typography fontSize={30} sx={{marginTop: "10px", height: "10%",alignItems: "center", justifyContent: "center", display:"flex", fontFamily: "inherit"}}>{ text[slideIndex].title}</Typography>
-                            <Typography fontSize={20} sx={{overflowY: "auto", height: "65%", display:"flex", fontFamily: 'Kalam'}}>{ text[slideIndex].explanation}</Typography>
+                            <Typography fontSize={20} sx={{overflowY: "scroll", height: "65%", display:"flex", fontFamily: 'Kalam'}}>{ text[slideIndex].explanation}</Typography>
                             <Divider className={classes.divider} style={{height: "5%", marginTop: "1%",width:'100%', color: "red", fontFamily: 'Lobster Two'}}>Querencia</Divider>
                             <Divider className={classes.divider} style={{height: "5%", margin: "1%",width:'100%',color: "red", fontFamily: 'Lobster'}}>"Kendinizi en güvende hissetttiğiniz yer"</Divider>
                             {/* <Typography sx={{marginTop: "1%", height: "5%", color: "red", fontFamily: 'Lobster Two'}} >Querencia</Typography>
