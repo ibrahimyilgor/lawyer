@@ -14,6 +14,22 @@ const useStyles = makeStyles(
               position: "static",
               borderTop: `2px solid black`,
               height: "100%",
+              marginTop: "-0.5%"
+          } ,
+          '&::after': {
+            position: "static",
+            borderTop: `2px solid black`,
+            height: "100%",
+            marginTop: "-0.5%"
+          } 
+        }
+      },
+      divider2: {
+        '&.MuiDivider-root': {
+          '&::before': {
+              position: "static",
+              borderTop: `2px solid black`,
+              height: "100%",
               marginTop: "-1%"
           } ,
           '&::after': {
@@ -23,7 +39,7 @@ const useStyles = makeStyles(
             marginTop: "-1%"
           } 
         }
-      },
+      }
     }
   );
  
@@ -67,9 +83,9 @@ export default function Slider({slideIndex,setSlideIndex}) {
                     >   
                         <div style={{height: "90%",  alignItems:"center", justifyContent: "center", display:"flex", flexDirection: "column", fontFamily: "inherit"}}>
                             <Typography fontSize={30} sx={{marginTop: "10px", height: "10%",alignItems: "center", justifyContent: "center", display:"flex", fontFamily: "inherit"}}>{ text[slideIndex].title}</Typography>
-                            <Typography fontSize={20} sx={{overflowY: "scroll", height: "65%", display:"flex", fontFamily: 'Kalam'}}>{ text[slideIndex].explanation}</Typography>
-                            <Divider className={classes.divider} style={{height: "5%", marginTop: "1%",width:'100%', color: "red", fontFamily: 'Lobster Two'}}>Querencia</Divider>
-                            <Divider className={classes.divider} style={{height: "5%", margin: "1%",width:'100%',color: "red", fontFamily: 'Lobster'}}>"Kendinizi en güvende hissetttiğiniz yer"</Divider>
+                            <Typography fontSize={20} sx={{overflowY: "auto", height: "65%", display:"flex", fontFamily: 'Kalam'}}>{ text[slideIndex].explanation}</Typography>
+                            <Divider className={classes.divider} style={{fontSize: "24px", height: "5%", marginTop: "1%",width:'100%', color: "red", fontFamily: 'Lobster Two'}}>Querencia</Divider>
+                            <Divider className={classes.divider2} style={{height: "5%", margin: "1%",width:'100%',color: "black", fontFamily: 'Lobster'}}>"Kendinizi en güvende hissetttiğiniz yer"</Divider>
                             {/* <Typography sx={{marginTop: "1%", height: "5%", color: "red", fontFamily: 'Lobster Two'}} >Querencia</Typography>
                             <Typography sx={{marginTop: "1%", height: "5%", color: "red", fontFamily: 'Lobster'}} >"Kendinizi en güvende hissetttiğiniz yer"</Typography> */}
                         </div>

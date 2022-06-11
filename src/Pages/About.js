@@ -23,7 +23,7 @@ const About = () => {
 
  const [slideIndex, setSlideIndex] = useState(0);
  const [time, setTime] = useState(Date.now());
- const [duration, setDuration] = useState(5000);
+ const [duration, setDuration] = useState(8000);
 
  const [leftHover, setLeftHover] = useState(false);
  const [rightHover, setRightHover] = useState(false);
@@ -32,11 +32,13 @@ useEffect(() => {
  const interval = setInterval(() => setTime(Date.now()), duration);
  return () => {
    console.log("slideindex",slideIndex);
-   if(slideIndex === 2){ // BURADAKI 5 FOTO SAYISI
-     setSlideIndex(1);
+   
+ console.log(time, interval)
+   if(slideIndex === 1){ // BURADAKI 5 FOTO SAYISI
+     setSlideIndex(0);
    }
    else{
-     setSlideIndex((slideIndex)%2); // BURADAKI 6 FOTO SAYISI + 1
+     setSlideIndex(1); // BURADAKI 6 FOTO SAYISI + 1
    }
      clearInterval(interval);
  };
