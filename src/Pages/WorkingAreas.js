@@ -85,6 +85,13 @@ const WorkingAreas = () => {
   }
 
   useEffect(() => {
+    console.log("index",index)
+    if(open === true){
+        setHoverIndex(index);
+    }
+ }, [open]);
+
+  useEffect(() => {
     console.log("hoverIndex",hoverIndex);
  }, [hoverIndex]);
 
@@ -93,7 +100,7 @@ const WorkingAreas = () => {
           {areas.map((item,index) => {
               return (
                   <Grid xs={3} item sx={{ height: "20.5vh", width: "25vw", textAlign: "center", justifyContent: "center", display: "flex" }}>
-                      <Button onMouseEnter={() => setHoverIndex(index)} onMouseLeave={() => setHoverIndex(-1)} onClick={() => buttonClick(index)} sx={{ fontSize: dim?.height > dim?.width ? "3vw" : "2vh", fontFamily: 'Kalam', height: "90%", width: "90%", textAlign: "center", justifyContent: "center", display: "flex", backgroundColor: "#A9A9A9", color: "black" }}>
+                      <Button onMouseEnter={() => setHoverIndex(index)} onMouseLeave={() => {if(open === false){setHoverIndex(-1)} }} onClick={() => buttonClick(index)} sx={{ fontSize: dim?.height > dim?.width ? "3vw" : "2vh", fontFamily: 'Kalam', height: "90%", width: "90%", textAlign: "center", justifyContent: "center", display: "flex", backgroundColor: "#A9A9A9", color: "black" }}>
                           {index !== hoverIndex ? item.name : item.logo}
                       </Button>
                   </Grid>
