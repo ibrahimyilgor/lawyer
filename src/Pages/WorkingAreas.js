@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './WorkingAreas.css';
 import {useState} from 'react'
 import {Box, Button, Grid, Modal, Typography } from "@mui/material";
@@ -84,16 +84,16 @@ const WorkingAreas = () => {
       setIndex(idx)
   }
 
-  /*useEffect(() => {
-    console.log("windowSize",windowSize);
- }, [windowSize]);*/
+  useEffect(() => {
+    console.log("hoverIndex",hoverIndex);
+ }, [hoverIndex]);
 
   return (
     <><Grid container justifyContent="flex-end">
           {areas.map((item,index) => {
               return (
                   <Grid xs={3} item sx={{ height: "20.5vh", width: "25vw", textAlign: "center", justifyContent: "center", display: "flex" }}>
-                      <Button onMouseOver={() => setHoverIndex(index)} onMouseOut={() => setHoverIndex(-1)} onClick={() => buttonClick(index)} sx={{ fontSize: dim?.height > dim?.width ? "3vw" : "2vh", fontFamily: 'Kalam', height: "90%", width: "90%", textAlign: "center", justifyContent: "center", display: "flex", backgroundColor: "#A9A9A9", color: "black" }}>
+                      <Button onMouseEnter={() => setHoverIndex(index)} onMouseLeave={() => setHoverIndex(-1)} onClick={() => buttonClick(index)} sx={{ fontSize: dim?.height > dim?.width ? "3vw" : "2vh", fontFamily: 'Kalam', height: "90%", width: "90%", textAlign: "center", justifyContent: "center", display: "flex", backgroundColor: "#A9A9A9", color: "black" }}>
                           {index !== hoverIndex ? item.name : item.logo}
                       </Button>
                   </Grid>
