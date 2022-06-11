@@ -1,0 +1,56 @@
+.TextM {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    color:#ffffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.RootM{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.IconAndTextM{
+    margin-top:3vh;
+    height:12vh;
+    width: 95%;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1%;
+    background-color: #000000ee;
+    border-radius: 4vh;
+
+}
+
+.IconM{
+    height: 10vh;
+    float:left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left:1vw;
+    margin-right:1vw;
+}
+
+.LeftM{
+    background-color:#ffffff ;
+    color:darkslategray ;
+    float:left;
+    position:relative;
+    height: 50vh;
+    width: 98vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.RightM{
+    background-color:#ffffff ;
+    height: 35vh;
+    width: 100vw;
+}

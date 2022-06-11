@@ -13,8 +13,13 @@ import WorkingAreas from "./Pages/WorkingAreas";
 import TopNavigation from "./Navigation/TopNavigation";
 import './App.css';
 import useOnScreen from "./useOnScreen";
+import useWindowSize from "./useWindowSize";
+import ContactMobile from "./Pages/ContactMobile";
 
 export default function App() {
+
+  const windowSize = useWindowSize();
+
   const ref1 = useRef();
   const ref2 = useRef();
   const ref3 = useRef();
@@ -32,7 +37,7 @@ export default function App() {
  }, []);
 
  useEffect(() => {
-  console.log(onScreen1,onScreen2,onScreen3,onScreen4)
+  console.log(onScreen1,onScreen2,onScreen3,onScreen4, ref4)
   if(onScreen1){
     setSelected(1);
     document.title = "BALAY | DİRİM - Hakkımızda";
@@ -65,7 +70,7 @@ export default function App() {
           <Pdf/>
         </section>
         <section ref={ref4} id="iletisim" class="four">
-          <Contact/>
+          {windowSize.innerHeight<=windowSize.innerWidth ? <Contact/> : <ContactMobile selected={selected}/>}
         </section>
       </>
     </div>
