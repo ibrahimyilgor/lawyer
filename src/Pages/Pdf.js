@@ -234,7 +234,7 @@ const Pdf = () => {
     <div className="parent">
     <div className="left">
       {pdfError&&<span className='text-danger'>{pdfError}</span>}
-      <List sx={{ maxHeight: "90%", overflow: "auto", fontFamily: 'Gentium Plus', width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+      <List sx={{ maxHeight: "90%", overflow: "auto", fontFamily: 'Kalam', width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
         {pdfs.map( (pdf,index) => {
           return (
           <ListItem onClick={()=>setSelectedPdf(index)}>
@@ -243,7 +243,7 @@ const Pdf = () => {
                <ImageIcon />
              </Avatar>
            </ListItemAvatar>
-           <ListItemText disableTypography style={{ fontFamily: 'Gentium Plus'}} primary={pdf?.name} secondary={" " + pdf?.date} />
+           <ListItemText disableTypography style={{ fontFamily: 'Kalam'}} primary={pdf?.name} secondary={" " + pdf?.date} />
           </ListItem>
           )
         })}

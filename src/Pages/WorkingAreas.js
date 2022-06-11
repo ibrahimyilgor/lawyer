@@ -75,7 +75,7 @@ const WorkingAreas = () => {
           {areas.map((item,index) => {
               return (
                   <Grid xs={3} item sx={{ height: "20.5vh", width: "25vw", textAlign: "center", justifyContent: "center", display: "flex" }}>
-                      <Button onClick={() => buttonClick(index)} sx={{ fontSize: dim?.height > dim?.width ? "3vw" : "2vh", fontFamily: 'Gentium Plus', height: "90%", width: "90%", textAlign: "center", justifyContent: "center", display: "flex", backgroundColor: "#A9A9A9", color: "black" }}>
+                      <Button onClick={() => buttonClick(index)} sx={{ fontSize: dim?.height > dim?.width ? "3vw" : "2vh", fontFamily: 'Kalam', height: "90%", width: "90%", textAlign: "center", justifyContent: "center", display: "flex", backgroundColor: "#A9A9A9", color: "black" }}>
                           {item.name}
                       </Button>
                   </Grid>
@@ -92,7 +92,7 @@ const WorkingAreas = () => {
               <Box sx={dim?.height > dim?.width ? stylePhone : style}>
                   {areas[index]?.detail.map((item,index2) => {
                       return(
-                        <Typography align="center" sx={{width: "100%", fontFamily: 'Gentium Plus', height: `${(35/areas[index]?.detail.length)}vh`,  justifyContent: "center",alignItems: "center", display: "grid"}} id="modal-modal-title" variant="body2">
+                        <Typography align="center" sx={{width: "100%", fontFamily: 'Kalam', height: `${(35/areas[index]?.detail.length)}vh`,  justifyContent: "center",alignItems: "center", display: "grid"}} id="modal-modal-title" variant="body2">
                             {areas[index]?.detail[index2]}
                         </Typography>
                       )

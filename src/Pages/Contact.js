@@ -33,9 +33,9 @@ const Users = ({
             <div className="Icon">
               <MapIcon style={{ height: "10vh", width: "10vh"}}></MapIcon>
             </div>
-            <Box style={{ height: "100%", display: "flex", fontFamily: 'Gentium Plus', justifyContent: "center", flexDirection: "column"}}>
+            <Box style={{ height: "100%", display: "flex", fontFamily: 'Kalam', justifyContent: "center", flexDirection: "column"}}>
                 <Grid xs={12} >
-                  <Typography style={{fontSize: "2.5vh", textAlign:"center", fontFamily: 'Gentium Plus', height: "100%", display: "grid", alignItems: "center"}}>Kavaklıdere Mahallesi Bestekar Caddesi Sadibey Apartmanı No: 40/2 Çankaya/Ankara</Typography>
+                  <Typography style={{fontSize: "2.5vh", textAlign:"center", fontFamily: 'Kalam', height: "100%", display: "grid", alignItems: "center"}}>Kavaklıdere Mahallesi Bestekar Caddesi Sadibey Apartmanı No: 40/2 Çankaya/Ankara</Typography>
                 </Grid>
               </Box>
           </div>
@@ -45,13 +45,13 @@ const Users = ({
               </div>
               <Box style={{ height: "100%", display: "flex", justifyContent: "center", flexDirection: "column"}}>
                 <Grid xs={12} >
-                  <Typography style={{textDecoration: "underline", fontSize: "3vh", fontFamily: 'Gentium Plus', textAlign:"center",  height: "100%", display: "grid", alignItems: "center"}}>{"Av. Ömer Alperen Balay"}</Typography>
+                  <Typography style={{textDecoration: "underline", fontSize: "3vh", fontFamily: 'Kalam', textAlign:"center",  height: "100%", display: "grid", alignItems: "center"}}>{"Av. Ömer Alperen Balay"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography style={{fontSize: "2.5vh", textAlign:"center", fontFamily: 'Gentium Plus',  height: "100%", display:"grid", alignItems: "center"}}>{"+90 532 013 43 29"}</Typography>
+                  <Typography style={{fontSize: "2.5vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}>{"+90 532 013 43 29"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography style={{fontSize: "2.5vh", textAlign:"center", fontFamily: 'Gentium Plus', height: "100%", display:"grid", alignItems: "center" }}> {"omer.alperen@icloud.com"}</Typography>
+                  <Typography style={{fontSize: "2.5vh", textAlign:"center", fontFamily: 'Kalam', height: "100%", display:"grid", alignItems: "center" }}> {"omer.alperen@icloud.com"}</Typography>
                 </Grid>
               </Box>
              {/*  <h3 className="P2">
@@ -75,13 +75,13 @@ const Users = ({
             </div>
             <Box style={{ height: "100%", display: "flex", justifyContent: "center", flexDirection: "column"}}>
                 <Grid xs={12} >
-                  <Typography style={{textDecoration: "underline", fontFamily: 'Gentium Plus', fontSize: "3vh", textAlign:"center", height: "100%", display: "grid", alignItems: "center"}}>{"Av. Bahadır Dirim"}</Typography>
+                  <Typography style={{textDecoration: "underline", fontFamily: 'Kalam', fontSize: "3vh", textAlign:"center", height: "100%", display: "grid", alignItems: "center"}}>{"Av. Bahadır Dirim"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography style={{fontSize: "2.5vh", textAlign:"center", fontFamily: 'Gentium Plus',  height: "100%", display:"grid", alignItems: "center"}}> {"+90 551 599 02 24"}</Typography>
+                  <Typography style={{fontSize: "2.5vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}> {"+90 551 599 02 24"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography style={{fontSize: "2.5vh", textAlign:"center", fontFamily: 'Gentium Plus',  height: "100%", display:"grid", alignItems: "center"}}>{"av.bahadir.dirim@gmail.com"}</Typography>
+                  <Typography style={{fontSize: "2.5vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}>{"av.bahadir.dirim@gmail.com"}</Typography>
                 </Grid>
               </Box>
             {/* <h3 className="P2">

@@ -7,12 +7,19 @@ import dirim from '../Photos/dirim.jpg'; // with import
 
 import balayBlack from '../Photos/balayBlack.jpg'; // with import
 import dirimBlack from '../Photos/dirimBlack.jpg'; // with import
+import useWindowSize from "../useWindowSize";
 
 const About = () => {
+
+  const windowSize = useWindowSize();
     
   useEffect(() => {
     document.title = "BALAY | DİRİM - Hakkımızda"
   }, []);
+
+  useEffect(() => {
+    console.log(windowSize);
+  }, [windowSize]);
 
  const [slideIndex, setSlideIndex] = useState(0);
  const [time, setTime] = useState(Date.now());
@@ -38,9 +45,11 @@ useEffect(() => {
   return (
     (
       <div className="About">
-        <div className="LeftPart" onMouseOver={() => setLeftHover(true)} onMouseOut={() => setLeftHover(false)}>
-          <img alt="logo2" width="100vw" height="auto" src={leftHover ? balay : balayBlack} class="keepRatio"/>
-        </div>
+        {windowSize?.innerWidth >= windowSize?.innerHeight && (
+          <div className="LeftPart" onMouseOver={() => setLeftHover(true)} onMouseOut={() => setLeftHover(false)}>
+            <img alt="logo2" width="100vw" height="auto" src={leftHover ? balay : balayBlack} class="keepRatio"/>
+          </div>
+        )}
         <div className="MiddlePart">
           <Slider
             slideIndex={slideIndex}
@@ -48,9 +57,11 @@ useEffect(() => {
           />
           
         </div>
-        <div className="RightPart" onMouseOver={() => setRightHover(true)} onMouseOut={() => setRightHover(false)}>
-        <img alt="logo2" width="100vw" height="auto" src={rightHover ? dirim : dirimBlack} class="keepRatio"/>
-        </div>
+        {windowSize?.innerWidth >= windowSize?.innerHeight && (
+          <div className="RightPart" onMouseOver={() => setRightHover(true)} onMouseOut={() => setRightHover(false)}>
+            <img alt="logo2" width="100vw" height="auto" src={rightHover ? dirim : dirimBlack} class="keepRatio"/>
+          </div>
+        )}
       </div>
       
     ));
