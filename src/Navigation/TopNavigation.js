@@ -65,6 +65,12 @@ const TopNavigation = ({selected, setSelected}) => {
           <Popover
             id={id}
             open={open}
+            PaperProps={{
+              style: { 
+                width: '40%',
+                height: "50%"
+              },
+            }}
             anchorEl={anchorEl}
             onClose={handleClose}
             onClick={handleClose}
