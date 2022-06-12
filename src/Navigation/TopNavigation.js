@@ -68,7 +68,7 @@ const TopNavigation = ({selected, setSelected}) => {
             PaperProps={{
               style: { 
                 width: '40%',
-                height: "50%"
+                height: "37%"
               },
             }}
             anchorEl={anchorEl}
