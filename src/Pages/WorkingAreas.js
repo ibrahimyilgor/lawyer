@@ -119,9 +119,9 @@ const WorkingAreas = () => {
                         textAlign: "center",
                         justifyContent: "center",
                         display: "flex" }}>
-                      <Button className={classes.button} onMouseEnter={() => setHoverIndex(index)} onMouseLeave={() => {if(open === false){setHoverIndex(-1)} }} onClick={() => buttonClick(index)} sx={{':hover': {
+                      <Button className={classes.button} onMouseEnter={() => setHoverIndex(index)} onMouseLeave={() => {if(open === false){setHoverIndex(-1)} }} onClick={() => buttonClick(index)} sx={{':hover': index === hoverIndex ? {
                             bgcolor: 'white',
-                        }, backgroundColor : hoverIndex !== index ? "#A9A9A9" : "white", fontSize: dim?.height > dim?.width ? "3vw" : "2vh", fontFamily: 'Kalam', height: "90%", width: "90%", textAlign: "center", justifyContent: "center", display: "flex", color: "black" }}>
+                        } : {bgcolor: "#A9A9A9"}, backgroundColor : hoverIndex !== index ? "#A9A9A9" : "white", fontSize: dim?.height > dim?.width ? "3vw" : "2vh", fontFamily: 'Kalam', height: "90%", width: "90%", textAlign: "center", justifyContent: "center", display: "flex", color: "black" }}>
                           {index !== hoverIndex ? item.name : item.logo}
                       </Button>
                   </Grid>
