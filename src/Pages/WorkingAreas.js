@@ -110,7 +110,7 @@ const WorkingAreas = () => {
  }, [hoverIndex]);
 
   return (
-    <Box sx={{height: "100%"}}><Grid container sx={dim?.height > dim?.width ? {height: "85%"} : {height: "100%"}} justifyContent="flex-end">
+    <Box sx={{height: "100%"}}><Grid container sx={dim?.height > dim?.width ? {height: "100%"} : {height: "100%"}} justifyContent="flex-end">
           {areas.map((item,index) => {
               return (
                   <Grid xs={3} className="Grid" item sx={{

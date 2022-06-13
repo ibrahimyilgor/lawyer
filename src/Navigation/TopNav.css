@@ -15,7 +15,7 @@
 
 .RightTopNav{
   height: 100%;
-  width: 75vw;
+  width: 70vw;
   margin-right:5vw;
   align-items: center;
 }
@@ -93,12 +93,12 @@ a:hover {
 }
 
 .Line {
-  height: 0.25vh;
+  height: 0.25%;
   background-color:#000000;
 }
 
 .Logos {
-  width: 25vw;
+  width: 30vw;
   height: 10vh;
   display:flex;
   float:left;
