@@ -2,3 +2,10 @@ img #waLogo {
     width:"auto";
     height:"50%"
 }
+
+.Grid{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
