@@ -5,12 +5,9 @@ import logo2 from '../logo2.png'; // with import
 import ListIcon from '@mui/icons-material/List';
 import useWindowDimensions from '../getDimensions';
 import { IconButton, Popover, Typography } from '@mui/material';
-import { div } from "react-router-dom";
 
 const TopNavigation = ({selected, setSelected}) => {
   const dim = useWindowDimensions();
-
-  const [aboutItems, setAboutItems] = useState(false);
 
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -21,7 +18,6 @@ const TopNavigation = ({selected, setSelected}) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
 
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;

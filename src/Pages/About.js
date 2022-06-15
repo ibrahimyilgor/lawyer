@@ -17,9 +17,9 @@ const About = () => {
     document.title = "BALAY | DİRİM - Hakkımızda"
   }, []);
 
-  useEffect(() => {
+/*   useEffect(() => {
     console.log(windowSize);
-  }, [windowSize]);
+  }, [windowSize]); */
 
  const [slideIndex, setSlideIndex] = useState(0);
  const [time, setTime] = useState(Date.now());
@@ -31,7 +31,6 @@ const About = () => {
 useEffect(() => {
  const interval = setInterval(() => setTime(Date.now()), duration);
  return () => {
-   console.log("slideindex",slideIndex);
    
  console.log(time, interval)
    if(slideIndex === 1){ // BURADAKI 5 FOTO SAYISI

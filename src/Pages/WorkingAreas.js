@@ -96,7 +96,6 @@ const WorkingAreas = () => {
   }
 
   useEffect(() => {
-    console.log("index",index)
     if(open === true){
         setHoverIndex(index);
     }
@@ -105,9 +104,9 @@ const WorkingAreas = () => {
     }
  }, [open]);
 
-  useEffect(() => {
+/*   useEffect(() => {
     console.log("hoverIndex",hoverIndex);
- }, [hoverIndex]);
+ }, [hoverIndex]); */
 
   return (
     <Box sx={{height: "100%"}}><Grid container sx={dim?.height > dim?.width ? {height: "100%"} : {height: "100%"}} justifyContent="flex-end">

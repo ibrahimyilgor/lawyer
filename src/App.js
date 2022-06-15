@@ -37,7 +37,7 @@ export default function App() {
  }, []);
 
  useEffect(() => {
-  console.log(onScreen1,onScreen2,onScreen3,onScreen4, ref4)
+  //console.log(onScreen1,onScreen2,onScreen3,onScreen4, ref4)
   if(onScreen1){
     setSelected(1);
     document.title = "BALAY | DİRİM - Hakkımızda";
@@ -55,6 +55,16 @@ export default function App() {
     document.title = "BALAY | DİRİM - İletişim";
   }
 }, [onScreen1,onScreen2,onScreen3,onScreen4]);
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
 
   return (
     <div class="container">

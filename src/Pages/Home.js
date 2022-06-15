@@ -22,7 +22,6 @@ const Home = () => {
  useEffect(() => {
   const interval = setInterval(() => setTime(Date.now()), 3000);
   return () => {
-    console.log("slideindex",slideIndex);
     if(slideIndex === 5){ // BURADAKI 5 FOTO SAYISI
       setSlideIndex(1);
     }

@@ -1,5 +1,5 @@
 .About {
-  height: 85vh;
+  height: 100%;
   display: flex;
   width: 100%;
   text-align: center;
@@ -12,23 +12,23 @@
 
 .LeftPart{
   float:left;
-  height: 85vh;
-  width: 25vw;
+  height: 100%;
+  width: 25%;
 }
 
 .MiddlePart{
-  height: 85vh;
-  width: 50vw;
+  height: 100%;
+  width: 50%;
 }
 
 .RightPart{
-  height: 85vh;
-  width: 25vw;
+  height: 100%;
+  width: 25%;
 }
 
 @media (orientation: portrait){ 
   .About {
-    height: 85vh;
+    height: 100%;
     display: flex;
     width: 100%;
     text-align: center;
@@ -40,8 +40,8 @@
   }
   
   .MiddlePart{
-    height: 85vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
   }
 
 }

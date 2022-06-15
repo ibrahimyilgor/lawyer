@@ -13,26 +13,15 @@ body{
     height: 85vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
-    height: 85vh;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-}
-
-.one {
- 
-}
-
-.two {
-
-}
-
-.three {
-}
-
-.four {
+    flex: 1;
 }

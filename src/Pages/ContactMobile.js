@@ -3,9 +3,7 @@ import './ContactMobile.css';
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 import useWindowSize from "../useWindowSize";
 
-import EmailIcon from '@mui/icons-material/Email';
 import MapIcon from '@mui/icons-material/Map';
-import CallIcon from '@mui/icons-material/Call';
 import PersonIcon from '@mui/icons-material/Person';
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
@@ -17,9 +15,6 @@ const Users = ({
     lng: 32.85853954488611
 }] }) => {
   const windowSize = useWindowSize();
-  /*useEffect(() => {
-    console.log("windowSize",windowSize);
- }, [windowSize]);*/
 
   useEffect(() => {
     document.title = "BALAY | DİRİM"
