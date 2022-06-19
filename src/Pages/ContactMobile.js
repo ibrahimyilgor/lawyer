@@ -7,6 +7,7 @@ import MapIcon from '@mui/icons-material/Map';
 import PersonIcon from '@mui/icons-material/Person';
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { Dimensions } from "react-native-web";
 
 const Users = ({ 
   google, 
@@ -20,8 +21,10 @@ const Users = ({
     document.title = "BALAY | DİRİM"
  }, []);
 
+ const windowHeight = Dimensions.get('window').height;
+
   return (
-    <div className="RootM">
+    <div className="RootM" style={{height: windowHeight * 0.85}}>
       <div className="LeftM">
         <div className="TextM">
           <div className="IconAndTextM">
@@ -75,13 +78,13 @@ const Users = ({
             google={google}
             containerStyle={{ 
               width: "100%",
-              height: "35vh",
+              height: windowHeight* 0.85* 0.45,
               position:"relative",
               bottom:0,
             }}
             style={{ 
               width: "100%",
-              height: "35vh",
+              height: windowHeight* 0.85* 0.45,
             }}
             center={locations[0]}
             initialCenter={locations[0]}

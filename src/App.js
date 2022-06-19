@@ -15,6 +15,7 @@ import './App.css';
 import useOnScreen from "./useOnScreen";
 import useWindowSize from "./useWindowSize";
 import ContactMobile from "./Pages/ContactMobile";
+import { Dimensions } from "react-native-web";
 
 export default function App() {
 
@@ -66,20 +67,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+const windowHeight = Dimensions.get('window').height;
+
   return (
-    <div class="container">
+    <div class="container" style={{height: windowHeight * 0.85, marginTop: windowHeight * 0.15}} >
       <>
         <TopNavigation selected={selected} setSelected={setSelected}/>
-        <section ref={ref1} id="hakkimizda" class="one">
+        <section style={{height: windowHeight * 0.85}} ref={ref1} id="hakkimizda" class="one">
           <About/>
         </section>
-        <section ref={ref2} id="calisma_alanlarimiz" class="two">
+        <section style={{height: windowHeight * 0.85}}  ref={ref2} id="calisma_alanlarimiz" class="two">
           <WorkingAreas/>
         </section>
-        <section ref={ref3} id="bilgi_merkezi" class="three">
-          <Pdf/>
+        <section style={{height: windowHeight * 0.85}}  ref={ref3} id="bilgi_merkezi" class="three">
+          {/* <Pdf/> */}<p>Bilgi Merkezi</p>
         </section>
-        <section ref={ref4} id="iletisim" class="four">
+        <section style={{height: windowHeight * 0.85}}  ref={ref4} id="iletisim" class="four">
           {windowSize.innerHeight<=windowSize.innerWidth ? <Contact/> : <ContactMobile selected={selected}/>}
         </section>
       </>

@@ -9,7 +9,6 @@ body{
 }
 
 .container {
-    margin-top: 15vh;
     height: 85vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;

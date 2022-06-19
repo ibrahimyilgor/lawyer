@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    height: 100%;
     flex-direction: column;
 }
 
@@ -17,8 +18,8 @@
 }
 
 .IconAndTextM{
-    margin-top:3vh;
-    height:12vh;
+    margin:1%;
+    height: 30%;
     width: 95%;
     border-style: solid;
     border-color: #000000;
@@ -43,7 +44,7 @@
     color:darkslategray ;
     float:left;
     position:relative;
-    height: 50vh;
+    height: 55%;
     width: 98vw;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -51,6 +52,6 @@
 
 .RightM{
     background-color:#ffffff ;
-    height: 35vh;
+    height: 45%;
     width: 100vw;
 }

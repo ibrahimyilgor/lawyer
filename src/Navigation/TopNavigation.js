@@ -5,6 +5,7 @@ import logo2 from '../logo2.png'; // with import
 import ListIcon from '@mui/icons-material/List';
 import useWindowDimensions from '../getDimensions';
 import { IconButton, Popover, Typography } from '@mui/material';
+import { Dimensions } from "react-native-web";
 
 const TopNavigation = ({selected, setSelected}) => {
   const dim = useWindowDimensions();
@@ -22,9 +23,13 @@ const TopNavigation = ({selected, setSelected}) => {
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
 
+  const windowHeight = Dimensions.get('window').height;
+
+  const topNavHeight = windowHeight * 0.15 - 2.5
+
   return (
 
-      <div  className="TopNav">
+      <div  className="TopNav" style={{height: topNavHeight}}>
         <div className="Logos">
           <div className="Logo">
             <img alt="logo2" width="100vw" height="auto" src={logo2} />
