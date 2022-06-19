@@ -44,7 +44,7 @@
     color:darkslategray ;
     float:left;
     position:relative;
-    height: 55%;
+    height: 65%;
     width: 98vw;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -52,6 +52,6 @@
 
 .RightM{
     background-color:#ffffff ;
-    height: 45%;
+    height: 35%;
     width: 100vw;
 }

@@ -5,9 +5,10 @@ import useWindowSize from "../useWindowSize";
 
 import MapIcon from '@mui/icons-material/Map';
 import PersonIcon from '@mui/icons-material/Person';
-import { Grid, Typography } from "@mui/material";
+import { Grid, Link, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { Dimensions } from "react-native-web";
+import { makeStyles } from "@mui/styles";
 
 const Users = ({ 
   google, 
@@ -21,7 +22,18 @@ const Users = ({
     document.title = "BALAY | DİRİM"
  }, []);
 
+ const useStyles = makeStyles(
+  {
+    link: {
+      '&.MuiLink-root': {
+        color: "#ffffff",
+      }
+    },
+  }
+);
+
  const windowHeight = Dimensions.get('window').height;
+ const classes = useStyles();
 
   return (
     <div className="RootM" style={{height: windowHeight * 0.85}}>
@@ -46,7 +58,11 @@ const Users = ({
                   <Typography style={{textDecoration: "underline", fontSize: "3vh", fontFamily: 'Kalam', textAlign:"center",  height: "100%", display: "grid", alignItems: "center"}}>{"Av. Ömer Alperen Balay"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}>{"+90 532 013 43 29"}</Typography>
+                  <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}>
+                      <Link style={{fontSize: "2vh"}} className={classes.link} href="tel:+905320134329" underline="none">
+                        {"+90 532 013 43 29"}
+                      </Link>
+                    </Typography>
                 </Grid>
                 <Grid xs={12}>
                   <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam', height: "100%", display:"grid", alignItems: "center" }}> {"omer.alperen@icloud.com"}</Typography>
@@ -64,7 +80,11 @@ const Users = ({
                   <Typography style={{textDecoration: "underline", fontFamily: 'Kalam', fontSize: "3vh", textAlign:"center", height: "100%", display: "grid", alignItems: "center"}}>{"Av. Bahadır Dirim"}</Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}> {"+90 551 599 02 24"}</Typography>
+                    <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}>
+                      <Link style={{fontSize: "2vh"}} className={classes.link} href="tel:+905515990224" underline="none">
+                        {"+90 551 599 02 24"}
+                      </Link>
+                    </Typography>
                 </Grid>
                 <Grid xs={12}>
                   <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}>{"av.bahadir.dirim@gmail.com"}</Typography>
@@ -78,13 +98,13 @@ const Users = ({
             google={google}
             containerStyle={{ 
               width: "100%",
-              height: windowHeight* 0.85* 0.45,
+              height: windowHeight* 0.85* 0.35,
               position:"relative",
               bottom:0,
             }}
             style={{ 
               width: "100%",
-              height: windowHeight* 0.85* 0.45,
+              height: windowHeight* 0.85* 0.35,
             }}
             center={locations[0]}
             initialCenter={locations[0]}
