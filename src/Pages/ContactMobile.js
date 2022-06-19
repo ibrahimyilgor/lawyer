@@ -65,7 +65,11 @@ const Users = ({
                     </Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam', height: "100%", display:"grid", alignItems: "center" }}> {"omer.alperen@icloud.com"}</Typography>
+                  <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam', height: "100%", display:"grid", alignItems: "center" }}> 
+                    <Link style={{fontSize: "2vh"}} className={classes.link} href="mailto:omer.alperen@icloud.com" underline="none">
+                      {"omer.alperen@icloud.com"}
+                    </Link>
+                  </Typography>
                 </Grid>
               </Box>
             </div> 
@@ -87,7 +91,11 @@ const Users = ({
                     </Typography>
                 </Grid>
                 <Grid xs={12}>
-                  <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}>{"av.bahadir.dirim@gmail.com"}</Typography>
+                  <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}>
+                    <Link style={{fontSize: "2vh"}} className={classes.link} href="mailto:av.bahadir.dirim@gmail.com" underline="none">
+                      {"av.bahadir.dirim@gmail.com"}
+                    </Link>
+                  </Typography>
                 </Grid>
               </Box>
           </div> 
