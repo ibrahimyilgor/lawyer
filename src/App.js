@@ -80,7 +80,7 @@ const windowHeight = Dimensions.get('window').height;
           <WorkingAreas/>
         </section>
         <section style={{height: windowHeight * 0.85}}  ref={ref3} id="bilgi_merkezi" class="three">
-          {/* <Pdf/> */}<p>Bilgi Bankası</p>
+          <Pdf/>
         </section>
         <section style={{height: windowHeight * 0.85}}  ref={ref4} id="iletisim" class="four">
           {windowSize.innerHeight<=windowSize.innerWidth ? <Contact/> : <ContactMobile selected={selected}/>}
