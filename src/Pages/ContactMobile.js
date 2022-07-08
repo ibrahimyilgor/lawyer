@@ -60,14 +60,14 @@ const Users = ({
                 <Grid xs={12}>
                   <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}>
                       <Link style={{fontSize: "2vh"}} className={classes.link} href="tel:+905320134329" underline="none">
-                        {"+90 532 013 43 29"}
+                        {"📞 +90 532 013 43 29"}
                       </Link>
                     </Typography>
                 </Grid>
                 <Grid xs={12}>
                   <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam', height: "100%", display:"grid", alignItems: "center" }}> 
                     <Link style={{fontSize: "2vh"}} className={classes.link} href="mailto:omer.alperen@icloud.com" underline="none">
-                      {"omer.alperen@icloud.com"}
+                      {"📧 omer.alperen@icloud.com"}
                     </Link>
                   </Typography>
                 </Grid>
@@ -86,14 +86,14 @@ const Users = ({
                 <Grid xs={12}>
                     <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}>
                       <Link style={{fontSize: "2vh"}} className={classes.link} href="tel:+905515990224" underline="none">
-                        {"+90 551 599 02 24"}
+                        {"📞 +90 551 599 02 24"}
                       </Link>
                     </Typography>
                 </Grid>
                 <Grid xs={12}>
                   <Typography style={{fontSize: "2vh", textAlign:"center", fontFamily: 'Kalam',  height: "100%", display:"grid", alignItems: "center"}}>
                     <Link style={{fontSize: "2vh"}} className={classes.link} href="mailto:av.bahadir.dirim@gmail.com" underline="none">
-                      {"av.bahadir.dirim@gmail.com"}
+                      {"📧 av.bahadir.dirim@gmail.com"}
                     </Link>
                   </Typography>
                 </Grid>
